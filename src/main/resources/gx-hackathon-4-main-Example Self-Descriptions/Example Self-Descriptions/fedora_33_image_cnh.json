@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "gax-service": "http://w3id.org/gaia-x/service#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gax-validation": "http://w3id.org/gaia-x/validation#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "gax-core": "http://w3id.org/gaia-x/core#",
+    "gax-participant": "http://w3id.org/gaia-x/participant#",
+    "dct": "http://purl.org/dc/terms/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "gax-node": "http://w3id.org/gaia-x/node#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "gax-resource": "http://w3id.org/gaia-x/resource#",
+    "did": "https://www.w3.org/TR/did-core/#"
+  },
+  "@id": "http://example.org/Image-koalxzspflgb9dir5clmm",
+  "@type": "gax-resource:Image",
+  "gax-resource:type": {
+    "@value": "virtual machine",
+    "@type": "xsd:string"
+  },
+  "gax-resource:name": {
+    "@value": "Defora 33 x86_64",
+    "@type": "xsd:string"
+  },
+  "gax-resource:copyrightOwnedBy": {
+    "@id": "CentOS_Community"
+  },
+  "gax-resource:license": {
+    "@value": "GNU General Public License",
+    "@type": "xsd:string"
+  },
+  "gax-resource:diskFormat": {
+    "@value": "RAW",
+    "@type": "xsd:string"
+  },
+  "gax-resource:containerFormat": {
+    "@value": "BARE",
+    "@type": "xsd:string"
+  },
+  "gax-resource:checkSum": {
+    "@value": "679c8ca014cb3ad1a20410a4f908d23f",
+    "@type": "xsd:string"
+  },
+  "gax-resource:version": {
+    "@value": "33",
+    "@type": "xsd:string"
+  },
+  "gax-resource:architecture": {
+    "@value": "x86_64",
+    "@type": "xsd:string"
+  },
+  "gax-resource:size": {
+    "@type": "gax-core:Measure",
+    "gax-core:Value": {
+      "@value": "4",
+      "@type": "xsd:float"
+    },
+    "gax-core:Unit": {
+      "@value": "GB",
+      "@type": "xsd:string"
+    }
+  },
+  "gax-resource:minRamSize": {
+    "@type": "gax-core:Measure",
+    "gax-core:Value": {
+      "@value": "512",
+      "@type": "xsd:float"
+    },
+    "gax-core:Unit": {
+      "@value": "MB",
+      "@type": "xsd:string"
+    }
+  }
+}

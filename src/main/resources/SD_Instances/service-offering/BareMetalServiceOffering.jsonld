@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gax-node": "http://w3id.org/gaia-x/node#",
+    "gax-service": "http://w3id.org/gaia-x/service#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:BareMetalServiceOffering",
+  "@type": "gax-service:ServiceOffering",
+  "gax-service:ServiceTitle": "BMaaS",
+  "gax-service:ServiceDescription": "A bare metal offering by ACME of type service offering",
+  "gax-service:ProvisionType": "private",
+  "gax-service:ServiceModel": "hardware",
+  "gax-service:WebAddress": {
+    "@value": "https://www.acme.com" ,
+    "@type": "xsd:anyURI"
+  },
+  "gax-node:BareMetalNode": ["gax:CPU-Node-1", "gax:CPU-Node-2", "gax:CPU-Node-3", "gax:CPU-Node-4", "gax:GPU-Node"],
+  "dcat:Keyword": [
+    "bare",
+    "metal"
+  ],
+  "gax-service:providedBy": {
+    "@id": "ex:ACMEProvider",
+    "@type": "gax-participant:Participant"
+  },
+  "gax-service:termsAndConditions": {
+        "@value": "Placeholder",
+        "@type": "xsd:anyURI"
+  }
+}

@@ -1,0 +1,167 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://w3id.org/gaia-x/participant#",
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "@nest"
+      ],
+      "@id": "did:web:vc.ptw.tu-darmstadt:euprogigant.io",
+      "@type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "credentialSubject": {
+        "id": "did:web:vc.ptw.tu-darmstadt:euprogigant.io",
+        "gx-participant:name": {
+          "@value": "Institut für Produktionsmanagement, Technologie und Werkzeugmaschinen",
+          "@type": "xsd:string"
+        },
+        "gx-participant:legalName": {
+          "@value": "Technische Universität Darmstadt",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "DEK1101R.RA999999",
+          "@type": "xsd:string"
+        },
+        "gx-participant:leiCode": {
+          "@value": "529900F96SGD8JFV9842",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Otto-Berndt-Strasse 2",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "64287",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Darmstadt",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Karolinenplatz 5",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "64289",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Darmstadt",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:parentOrganisation": [
+          {
+            "@type": "gx-participant:LegalPerson",
+            "gx-participant:legalName": {
+              "@type": "xsd:string",
+              "@value": "Technische Universität Darmstadt"
+            },
+            "gx-participant:registrationNumber": {
+              "@type": "xsd:string",
+              "@value": "DEK1101R.RA999999"
+            },
+            "gx-participant:leiCode": {
+              "@value": "529900F96SGD8JFV9842",
+              "@type": "xsd:string"
+            },
+            "gx-participant:legalAddress": {
+              "@type": "gx-participant:Address",
+              "gx-participant:country": {
+                "@value": "DE",
+                "@type": "xsd:string"
+              },
+              "gx-participant:street-address": {
+                "@value": "Karolinenplatz 5",
+                "@type": "xsd:string"
+              },
+              "gx-participant:postal-code": {
+                "@value": "64289",
+                "@type": "xsd:string"
+              },
+              "gx-participant:locality": {
+                "@value": "Darmstadt",
+                "@type": "xsd:string"
+              }
+            },
+            "gx-participant:headquarterAddress": {
+              "@type": "gx-participant:Address",
+              "gx-participant:country": {
+                "@type": "xsd:string",
+                "@value": "DE"
+              },
+              "gx-participant:street-address": {
+                "@value": "Karolinenplatz 5",
+                "@type": "xsd:string"
+              },
+              "gx-participant:postal-code": {
+                "@value": "64289",
+                "@type": "xsd:string"
+              },
+              "gx-participant:locality": {
+                "@value": "Darmstadt",
+                "@type": "xsd:string"
+              }
+            }
+          }
+        ],
+        "gx-participant:termsAndConditions": {
+          "gx-participant:url": {
+            "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+            "@type": "xsd:string"
+          },
+          "gx-participant:hash": {
+            "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:39:22.882Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:vc.ptw.tu-darmstadt.euprogigant.io",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..LjKhq9vFTla5Ocfh45w2mGz-hHEk2ZAnvgOypxl3tkvdsNQIK5yu13TIxhKzJKYeu3Ldi7E9HsPejxRC9fd-MuGOEoOzR27hrEt-ZGraA_b-Oo3Ro6jfApDLoJVedCmuWBHtbFQrxV_HwP3W5T8mvFL4OtnKqO6B7i00jl-lYgds9XyeA1MJayr1eHJx6iEOSPx0uWGbipxHy9qcz8z8rZkjc0-aRYTp661Hc3OOm_fmdUnEFW7-5VB8YFlAYp8BoLEZigGZGqEj7XsXQKNRYKUNjPeCtHEkWLkGOBhFz3q9Tr0ylli67tR287koahOxsuG0A8Zxs59Sp_Wg_XmNlA"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655732365118",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-20T13:39:25.118Z",
+      "credentialSubject": {
+        "id": "did:web:vc.ptw.tu-darmstadt:euprogigant.io",
+        "hash": "1806b34cdd7884c2a08cc565c6e7306332b7ade7520fe4a5f2acaadca77d0a0e"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:39:25.118Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..G0hJAQFXUGcUwxK-1ZhWjsquuPSqz_kZ_Sr3nPrgeAvJdu-BU-el5EVBJ_alVA4tXgzYklPZBrgjCeGwxz3EWjEo1FpgCynwlnJAFti07SQmiFp_N8qbE-3sT21X5J3pJosqDI25TOsY-dbnTXfctLPtj8OUKhR6ME58qzB_pDgv1c0BRsHF5lLbuUdDzYuRneZCR5cGl0NnmcHqhON0AI4scC2XDEQLVcIR1NdGx2i_isdD0b8vjYFAiueslPiZkEtrTLWnxatH4YpesLN1flvykwiU4GWBzIoax1CAxGyBQa4xMuFdUh4i4rJasGL1BsJy3SYFXKu_vrzFXRMG1g",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
+    }
+  }

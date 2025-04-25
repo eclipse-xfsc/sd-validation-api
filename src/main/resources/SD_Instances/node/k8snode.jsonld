@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "ex": "http://example.org/",
+    "gax": "http://w3id.org/gaia-x/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "https://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "ex:KubernetesNode",
+  "@type": "gax:Node"
+}

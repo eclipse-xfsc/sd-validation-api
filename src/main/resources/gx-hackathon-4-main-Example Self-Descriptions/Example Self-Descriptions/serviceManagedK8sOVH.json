@@ -1,0 +1,81 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/resource#",
+      "http://w3id.org/gaia-x/participant#",
+      "http://w3id.org/gaia-x/service-offering#"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "@id": "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json",
+      "gx-service-offering:providedBy": {
+        "@type": "xsd:string",
+        "@value": "https://compliance.gaia-x.eu/.well-known/participantOVH.json"
+      },
+      "gx-service-offering:name": {
+        "@type": "xsd:string",
+        "@value": "Managed OVH Cloud K8s Cluster"
+      },
+      "gx-service-offering:description": {
+        "@type": "xsd:string",
+        "@value": "Managed OVH Cloud K8s Cluster"
+      },
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://www.ovhcloud.com/fr/terms-and-conditions/",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "contentHash",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-service-offering:gdpr": [
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:imprint": "https://www.ovhcloud.com/fr/terms-and-conditions/"
+        },
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:privacyPolicy": "https://www.ovhcloud.com/fr/personal-data-protection/"
+        }
+      ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T14:51:49.327Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:compliance.gaia-x.eu",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dsWnqL0m0Wu7qhRsfkFC6Y9LbuWSIXxzdPNPH6iH6y7gt70PXjFxccMlYf8Ue4E3GaPxugp-gR35E9It9S8rdWXIb0WE4rQgtMKvPAg0jX-vj13ht-2nKZa8xe7PeYh9XHTc2XvMXY07iaP8jXZ2dF2d69a7SeBMLSAvK-MPlKfyblrd7XeAYzXqTLe9-eVdz8mCfsoposIfA266wkKQlvl_RPJvu61WI5iAG8kryUcV-GaUeXRnoi4w6OBTvJs0FV0ua8F98iTLq-v6ne031QwHbcMnP0Ff4CsCnFhe981JJN1judRyew_BBhfJHGHZIhuuQ7P9QPVGE9d2DjT9VQ"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655650312325",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-19T14:51:52.325Z",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json",
+      "hash": "1a1a3110e3fd4143800f6996fa88a3260a0d1fd2bc92f8bf4a6c0708d88235fb"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T14:51:52.325Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..E1rQpS0BbCZmlRE7CENm164Uo9Te8EeQbJLOvgcqma9Av0NG7ovat1YoHBe7Y0lVrr47CyDDxc9wvzXACkqFYgfJdys1HYvI3FUbcMgF12_r2pDSvn9aDA4PMWJdZST83pPFMrAi4g8LCzb5vunLHw-2mPiz5Jd0YrA_VyRjCKzk4P0x-1ncCvdRied32YWXN3XSAjzrrNnGIrfPGkbzAkUk-mK1DrMW6IU4b23L6FJuYXHdLKgxvCKLBWTB4CCWmD8Q_WkcJUBKe0TGOl0OLfqirZDp9XRD446T_CJlRJgZicTNDD6RV6AKqueUggFAzb2G15gPIiBlR3lxfxhi6A",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "gax-participant": "http://w3id.org/gaia-x/participant#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:de_NBI",
+  "@type": "gax-participant:Provider",
+  "gax-participant:LegallyBindingName": "de.NBI",
+  "gax-participant:Logo": {
+    "@id": "https://bonian.de/denbi_small.png"
+  },
+  "gax-participant:CommercialRegister": {
+    "@type": "vcard:Address",
+    "vcard:street-address": "Universitätsstraße 27",
+    "vcard:postal-code": "33615",
+    "vcard:locality": "Bielefeld",
+    "vcard:country-name": "Germany"
+  },
+  "gax-participant:LegallyBindingAddress": {
+    "@type": "vcard:Address",
+    "vcard:street-address": "Universitätsstraße 27",
+    "vcard:postal-code": "33615",
+    "vcard:locality": "Bielefeld",
+    "vcard:country-name": "Germany"
+  },
+  "gax-participant:LegalForm": {
+   "@value": "E.g. Societas Europaea"
+  },
+  "gax-participant:WebAddress": {
+    "@value": "https://www.denbi.de",
+    "@type": "xsd:anyURI"
+  },
+  "gax-participant:VATnumber": {
+    "@value": "E.g. DE 129515865"
+  },
+  "gax-participant:SalesTaxID": {
+    "@value": "E.g. DE 129515865"
+  },
+  "gax-participant:LegalRegistrationNumber": {
+    "@value": "E.g. HRB 1234"
+  },
+  "gax-participant:Jurisdiction": {
+    "@value": "Germany"
+  },
+  "gax-participant:IndividualContactLegal": {
+    "@type": "vcard:Agent",
+    "vcard:given-name": "Andreas",
+    "vcard:family-name": "Tauch",
+    "vcard:nickname": "Andreas",
+    "vcard:Email": {
+      "@value": "mailto:tauch@cebitec.uni-bielefeld.de",
+      "@type": "xsd:anyURI"
+    }
+  },
+  "gax-participant:IndividualContactTechnical": {
+    "@type": "vcard:Agent",
+    "vcard:given-name": "Alfred",
+    "vcard:family-name": "Pühler",
+    "vcard:nickname": "Alfred",
+    "vcard:Email": {
+      "@value": "mailto:puehler@cebitec.uni-bielefeld.de",
+      "@type": "xsd:anyURI"
+    }
+  },
+  "gax-participant:Certification": {
+    "@id": "gax-participant:ISO_9001"
+  },
+  "gax-participant:Location": {
+    "@type": "gax-participant:Region",
+    "gax-participant:Name": "Germany"
+  },
+  "gax-participant:CloudLocation": [
+    {
+      "@type": "gax-participant:Region",
+      "gax-participant:Name": "Frankfurt"
+    },
+    {
+      "@type": "gax-participant:Region",
+      "gax-participant:Name": "Heidelberg"
+    }
+  ],
+  "gax-participant:MarketingImage": {
+    "@value": "https://bonian.de/gaiax/denbi_test_marketing_img.jpeg",
+    "@type": "xsd:anyURI"
+  },
+  "gax-participant:description": "In life sciences today, the handling, analysis and storage of enormous amounts of data is a challenging issue. For example, new sequencing and imaging technologies result in the generation of large scale genomic and image data. Hence, an appropriate IT infrastructure is crucial to perform analyses with such large datasets and to ensure secure data access and storage. In addition, it is difficult to directly compare result data that have been processed at different sites, due to a lack in standardization of workflows. The de.NBI cloud is an excellent solution to enable integrative analyses for the entire life sciences community in Germany and the efficient use of data in research and application. To a large extent, de.NBI will close the gap of the missing computational resources for researchers in Germany. A federated de.NBI Cloud concept and infrastructure leads to the reduction in overall infrastructure and operational costs.",
+  "gax-participant:DataProtectionOfficer": {
+    "@type": "vcard:Agent",
+    "vcard:given-name": "Datenschutzbeauftragter",
+    "vcard:family-name": "Datenschutzbeauftragter",
+    "vcard:nickname": "Datenschutzbeauftragter",
+    "vcard:Email": {
+      "@value": "mailto:datenschutzbeauftragte@uni-bielefeld.de",
+      "@type": "xsd:anyURI"
+    }
+  }
+}

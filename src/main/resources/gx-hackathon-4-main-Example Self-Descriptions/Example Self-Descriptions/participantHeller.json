@@ -1,0 +1,110 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://w3id.org/gaia-x/participant#",
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "@nest"
+      ],
+      "@id": "https://vc.heller.euprogigant.io/sd/participant.json",
+      "@type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "credentialSubject": {
+        "id": "did:web:vc.heller.euprogigant.io",
+        "gx-participant:legalName": {
+          "@value": "Gebrüder Heller Maschinenfabrik GmbH",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "DEB8534.HRB220233",
+          "@type": "xsd:string"
+        },
+        "gx-participant:leiCode": {
+          "@value": "529900XJBRSYA2F0T237",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Gebrüder-Heller-Strasse 15",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "72622",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Nürtingen",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Gebrüder-Heller-Strasse 15",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "72622",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Nürtingen",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:parentOrganisation": [],
+        "gx-participant:subOrganisation": [],
+        "gx-participant:termsAndConditions": {
+          "gx-participant:url": {
+            "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+            "@type": "xsd:string"
+          },
+          "gx-participant:hash": {
+            "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:38:16.542Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:vc.heller.euprogigant.io",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..sCI0QJs3mm8T7rfMeblDx51rc_iCQiX-14HF7eSlIAwt07YbQHoz_6_avELl5HY6Tx6P7zKJZ3R51aLHBEyLA5dlkSg4BnY8_W4kHvPP63RvcYn4IYlVsrUUHsqJHiqdcpKgDJzNqz6hgDxCIscgfvzUb4bLqaPaA4x-n4J3oxmuufcjYl6s--0hbp3eC7IHHfOLpL0e-JcId47MaDGCoOd44sG44cF25TQO0L7xWkcYSUVbJaJMy2gZW98_6Cd8YXFLSHMux2MzhS_wjmMDf8Mghj8uL3LOElh3VBa3NYxx45xaS-1snjycn6l6Yz5OJiSQG_wGeDRO3jwkRRdgPw"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655732298907",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-20T13:38:18.907Z",
+      "credentialSubject": {
+        "id": "did:web:vc.heller.euprogigant.io",
+        "hash": "3f5f5a451e00e193117b3540a5531c868e82212e52a6315ef7e66a661655fddb"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:38:18.907Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..DLY54s9midXwP8UVOg1sZa3fwjMpaP7IROXH4lMe-cL95GthNA0D2zrAvZVb6lORVv9aiznEbwp1EFOe7BzUflekyDJcNkMwJiS_vNHP1AonzEd8pK6JLHHbx9K7SLAe5v1GNJf0ap2yEenDWQZEiDaVEdpY0jPEBhNzXjFTjGpvram6vpkWlv4FinenLHcqmF4DRCvRRexA79lcsnEkeXyDCeoMoa85nbzDFCalQuXSJCcqeyF8BYd52tgimFNErYcyBitNB2BR4PbwhKuGrt_Ks6Jh2LwxOF8zXPOKr5ErCj7kRSfdDaeFm23zOfVDJ3VzlZj9sCZS0-vYgdn-bQ",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
+    }
+  }

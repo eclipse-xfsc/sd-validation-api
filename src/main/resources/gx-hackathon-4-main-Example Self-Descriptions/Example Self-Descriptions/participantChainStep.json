@@ -1,0 +1,112 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "@nest"
+    ],
+    "@id": "https://gaiax.chainstep-demo.de/.well-known/participant.json",
+    "@type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "credentialSubject": {
+      "id": "did:web:gaiax.chainstep-demo.de",
+      "gx-participant:name": {
+        "@value": "CHAINSTEP GmbH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "CHAINSTEP GmbH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "DEK1101R.HRB146587",
+        "@type": "xsd:string"
+      },
+      "gx-participant:ethereumAddress": {
+        "@value": "0xedf9122Ba3bef74A16d6dE80aa25345a6aD0Def4",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "DE",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Max-Brauer-Allee 46",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "22765",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Hamburg",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "DE",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Max-Brauer-Allee 46",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "22765",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Hamburg",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-21T13:32:39.068Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:gaiax.chainstep-demo.de",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..AaOvk_a6AkjJCnlMVsWcXWzYYS8S1FJDLFSASPncbp8uF8ujZ3jBTlhHOQJDylrnVhikcSxy3UgCCn-FZivD5iwCrodmtO2zexY2hblPXmafymBUDzi1_Fu27jh4PNVDM7ROfA6frbV2QbeJMGbDbxZ7Rha0IcUEzLDXpUHDGkmIeUIRGb99OENrKyE2zHHWq6aC5FYuF6QjW7IltM5CB4127J8B7NYDBe1AextzhPl_2HVgzjk7srHLuHi-7NjgRWhMJZ3rcDhXqMfLlKlFsFdgJ5LyqZ_nV3j9F_p0EkrP_Re8zgJ9Yy0Uh537AIMX_yO7SvcPWWTmxcDuUl-CtGTBP7n6qBzRrS3uA5SGBo0VsrTLadYZe3e6WGlA-mAjEv9KFnPLK08tvthScKiGwAeyR2zN9Z628caKyyUowsONgerOp3chVTm-57ZWRQmOPGuScATJljDa2LQxcgDE4JQC48NwCIut3k4D06zqNBE-t8In4AeJ-2wa9Yatfrn4iu8yfr6xCSbQrYj-qyPgCJYISGdJtDmBv7mBoISlLUVqZ6dT4yY8YD_BnUl6FGJ6iR7lSAiBBUXpVw95VK5akihKv86H4Sve6aSr2y8HZr45oqkfK171g8QX2WPXRVX0pqRW7qsSSaVg7YMJhlvEva2JD9Sbcem172XkG_QfpE4"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655818365185",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-21T13:32:45.185Z",
+    "credentialSubject": {
+      "id": "did:web:gaiax.chainstep-demo.de",
+      "hash": "d93a0708d04fee440e1318338877df4b13c60eb6def7100c077cbee3b5275f73"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-21T13:32:45.185Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..WlW13fOS2zp6ZOPrcQN4ZAlQuYTzaF0dUDAS8sh-8rxQNEVN_M7Qi3NMKpHWvztsG92urJ7Jp4OXrHbt2q34uzwZZy63AmcKQb1CqJ8EI_qIg8gkjH5QWP78OIHWYUl0bZR2NB4n6b-BZoZRkfWjJaMkxe4zS0rs7IqypuG8qg0UPoqzEUWou4m43uFcG2mySPS3dzSbZlmIn-SHQNm_ZJlr86E68ILNC5S0qyJ3KyogoV8CKUPSSBOf9zIOyeTt0ae7i3_tcc-zheoAR09icLqqIHjgtrpFuuccphl97BmoL1l1UmXaJg-nXyro1igJR4d9x_Pi4vVQAZ9W3tUpnQ",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "gax-participant": "http://w3id.org/gaia-x/participant#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:ACMEProvider",
+  "@type": "gax-participant:Participant",
+  "gax-participant:LegallyBindingName": "ACME Provider",
+  "gax-participant:registrationNumber": "DE123456789",
+  "gax-participant:headquarterAddress": {
+    "@type": "vcard:Address",
+    "vcard:street-address": "ACME Street 1",
+    "vcard:postal-code": "12163",
+    "vcard:country-name": "Germany",
+    "vcard:locality": "Berlin"
+  },
+  "gax-participant:legalAddress": {
+    "@type": "vcard:Address",
+    "vcard:street-address": "ACME Street 1",
+    "vcard:postal-code": "12163",
+    "vcard:country-name": "Germany",
+    "vcard:locality": "Berlin"
+  }
+}

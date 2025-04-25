@@ -1,0 +1,104 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://w3id.org/gaia-x/participant#",
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "@nest"
+      ],
+      "@id": "https://vc.infotec-ag.euprogigant.io/sd/participant.json",
+      "@type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "credentialSubject": {
+        "id": "did:web:vc.infotec-ag.euprogigant.io",
+        "gx-participant:legalName": {
+          "@value": "IGH Infotec Aktiengesellschaft",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "DER1101.HRB45996",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Berghausener Strasse 98",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "40764",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Langenfeld",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Berghausener Strasse 98",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "40764",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Langenfeld",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:termsAndConditions": {
+          "gx-participant:url": {
+            "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+            "@type": "xsd:string"
+          },
+          "gx-participant:hash": {
+            "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:38:22.927Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:vc.infotec-ag.euprogigant.io",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..R9RXPe8C3DaLwIzfJld82bOwtxTru-NHMnshwoMFaZ8vj8MvKZRrrgUNGbZtpEdNZB3T4KFuaLzZ9Vu7q8_8Jh0DYgyABtncDenuT0kdqHVnYib0EQxylAVp7maZ9b4G6WEbN3_jX9w7AwxOV2fbMW1mazXffAWdG5n1ABfO6hWOontVCdxnAMiwuH55qOMl2Hep0vK5fUVRrvIiD3GfLT5IRl9z2GDlUqOaoAHTEYq9eNz7z8mQDzQyeyJI3dk_w-gceo_t1GTVNAnvJQ_tgG8lY_h4tHLh7DXXT2lf6SCcG4zMgaDlrU32PlBNh0iws2yDXpdwYZAdnikCzr2bxw"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655732305286",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-20T13:38:25.286Z",
+      "credentialSubject": {
+        "id": "did:web:vc.infotec-ag.euprogigant.io",
+        "hash": "f844f68f1ffd1a8aaabdea8d72ebd7bac3216bd7bbf92b393aaf2e936b654d37"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:38:25.286Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..dS_-_HcIMVR7-muVpxG7bzm3i8TsCY5ehkA6zH6EPIL6HPgEJdMzKm3RnXrsidgUMlK2VqmzZcXVV-qPiEEkI6v3dRxoGffvcINXoeanXg6NFN20En4FjDP8dkAlbyFd0oKOtMb26QYytgNDLuAooN4CWTOBziffbSKEAlzsPpemh3cFeG_N85tqMpfhmby4JEVcXnRz8NuI7xQxakbQD22Obj-4sjq8RZEr69FNWVbVRg_krFsM__ekNzhXt1rloCpcTvfR039ktXxyTj_IuKTjzUoFl3L8KDNytlot2aJnom8WhYnZCfuX-hr0EcrzcYqfLge76PkzT8kGz0-20g",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
+    }
+  }

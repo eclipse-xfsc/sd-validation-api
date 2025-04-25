@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gax-resource": "http://w3id.org/gaia-x/resource#",
+    "gax-service": "http://w3id.org/gaia-x/service#",
+    "gax-core": "http://w3id.org/gaia-x/core#",
+    "ex": "http://example.org/",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "ex:Intel-SSD-DC-P4610",
+  "@type": "gax-resource:BareMetalNode",
+  "gax-resource:Name": "Intel-SSD-DC-P4610",
+  "gax-service:NodeName": "Intel-SSD-DC-P4610",
+  "dct:Description": "Placeholder Description",
+  "dct:location": "Placeholder Location",
+  "gax-resource:Jurisdiction": "Placeholder Jurisdiction",
+  "gax-resource:ProductID": "Intel SSD DC P4610",
+  "gax-resource:Type": "SSD",
+  "gax-resource:Size": {
+    "@type": "gax-core:Measure",
+      "gax-core:Value": {
+        "@value": "1600.0",
+        "@type": "xsd:float"
+      },
+    "gax-core:Unit": "GB"
+  },
+  "gax-resource:isOperatedBy": {
+    "@id": "ex:ACMEProvider",
+    "@type": "gax-participant:Participant"
+  }
+}

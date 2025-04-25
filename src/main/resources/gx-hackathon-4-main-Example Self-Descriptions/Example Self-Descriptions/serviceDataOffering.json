@@ -1,0 +1,139 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/resource#",
+      "http://w3id.org/gaia-x/participant#",
+      "http://w3id.org/gaia-x/service-offering#"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "@id": "https://vc.ptw.tu-darmstadt.euprogigant.io/sd/gxserviceDataResourceServiceOfferingPTWTUDa_eupg.json",
+    "credentialSubject": {
+      "id": "https://vc.ptw.tu-darmstadt.euprogigant.io/sd/gxserviceDataResourceServiceOfferingPTWTUDa_eupg.json",
+      "gx-service-offering:providedBy": {
+        "@value": "https://vc.ptw.tu-darmstadt.euprogigant.io/sd/participant.json",
+        "@type": "xsd:string"
+      },
+      "gx-service-offering:name": {
+        "@value": "(cost-coverage) Data - EuProGigant CNC-ProfiTrainer (Minimal Viable Hannover)",
+        "@type": "xsd:string"
+      },
+      "gx-service-offering:description": [
+        {
+          "@value": "full text as decribed in did:op:1E8Ae58222F96f9235F7093C73f73e2497dC7A10",
+          "@type": "xsd:string"
+        }
+      ],
+      "gx-service-offering:tags": [
+        {
+          "@value": "fair",
+          "@type": "xsd:string"
+        },
+        {
+          "@value": "hannover",
+          "@type": "xsd:string"
+        },
+        {
+          "@value": "EuProGigant",
+          "@type": "xsd:string"
+        }
+      ],
+      "gx-service-offering:serviceModel": {
+        "@value": "subscription",
+        "@type": "xsd:string"
+      },
+      "gx-service-offering:webAddress": {
+        "@value": "https://euprogigant.portal.minimal-gaia-x.eu/",
+        "@type": "xsd:anyURI"
+      },
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://creativecommons.org/licenses/by/4.0/",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "54895d592300bdd22f5173efbc43db791e5cf54fb1ba71884099ae91eaa9b452",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-service-offering:policies": [
+        {
+          "@value": "Policy A ODRL/REGO",
+          "@type": "xsd:string"
+        },
+        {
+          "@value": "Policy B ODRL/REGO",
+          "@type": "xsd:string"
+        }
+      ],
+      "gx-service-offering:gdpr": [
+        {
+          "@value": "gdpr attribute 1",
+          "@type": "xsd:string"
+        },
+        {
+          "@value": "gdpr attribute 2",
+          "@type": "xsd:string"
+        }
+      ],
+      "gx-service-offering:dependsOn": [
+        {
+          "@id": "https://www.delta-dao.com/.well-known/operatorEngine.json",
+          "@type": "gx-service:serviceOfferingExperimental"
+        },
+        {
+          "@id": "https://www.delta-dao.com/.well-known/operatorService.json",
+          "@type": "gx-service:serviceOfferingExperimental"
+        },
+        {
+          "@id": "https://www.delta-dao.com/.well-known/accesscontroller.json",
+          "@type": "gx-service:serviceOfferingExperimental"
+        }
+      ],
+      "gx-service-offering:aggregationOf": [
+        {
+          "@value": "https://vc.ptw.tu-darmstadt.euprogigant.io/sd/gxresourceDataSetPTWTUDA_eupg.json",
+          "@type": "xsd:string"
+        },
+        {
+          "@value": "https://vc.a1.digital.euprogigant.io/sd/gxresourceStorageA1D_eupg.json",
+          "@type": "xsd:string"
+        }
+      ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-20T13:39:13.256Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:vc.ptw.tu-darmstadt.euprogigant.io",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..BrDtbKrjNuLmXiLYDD_724MjgbT8ciUd8nd8hd2xLY7wk4mSN2AO2HkXhQLeWZUuJGW98YCOtP8WNyNcq83vIUf55uxYFU9j3eKalwRXlwwvkDwLzDf89a1zcVr62yPBsZst97nQCdxLET3F4tyvnTxcn2MfU3xT2kmIjyoBZLDZtAFKMNYnI4IsnlSEIuuknXJCE9XRgEqhdxSoViHgtPOgbbYPANlD7VcDR6jCFV0itSuFYYa3-LlZR4xitbXUTi9x4RhrKyJf2byuHgPDckVJgtfJkAKUO-BSNEhkyvEnHHHKCJiaBKi7LPbh_JhdYjOMh1leMq18pawwyqTAVw"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655732356923",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-20T13:39:16.923Z",
+    "credentialSubject": {
+      "id": "https://vc.ptw.tu-darmstadt.euprogigant.io/sd/gxserviceDataResourceServiceOfferingPTWTUDa_eupg.json",
+      "hash": "9d464c0533af3f137ccd8201f99d3bd59aee5057356a59fbf69093345c687393"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-20T13:39:16.923Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..quVa984AfvY7E4gU4npOCA5cZXeKE4vfObUHUoiXOWjzLUJO6EE1_lNYAJ-2In17xmOVEVtMTwrRfspZDSBnsg1oBxT5ny46Ugjst4BLZ_CjCqm_hlrW31sg1qzp3M59-ZliNmsmpGHBlch3_CCil6OnO-tu-wThYOdyy0GI-FGrN3YFRpDvRB_lA3QuR5VOnoUF8AYYE3fbW1tvmt4Ot4qPvOJkVy0K18MuDWLWhMg0ajYsmHi29ta5rYZVaUKgnjtzG3JMXXZZGQy0euiNw-ZwSfkX1UlqyEpQ-zCD_IRhsKlXuAtePcmzSZf5nO5xKAf4YZs1CmFghhoC6c098g",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

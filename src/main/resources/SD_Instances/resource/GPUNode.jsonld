@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gax-resource": "http://w3id.org/gaia-x/resource#",
+    "gax-service": "http://w3id.org/gaia-x/service#",
+    "gax-core": "http://w3id.org/gaia-x/core#",
+    "ex": "http://example.org/",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "ex:GPU-Node",
+  "@type": "gax-resource:BareMetalNode",
+  "gax-resource:Name": "GPU-Node",
+  "gax-service:NodeName": "GPU-Node",
+  "dct:Description": "Placeholder Description",
+  "dct:location": "Placeholder Location",
+  "gax-resource:Jurisdiction": "Placeholder Jurisdiction",
+  "gax-resource:CPU": "gax:Intel-Xeon-Platinum-8280",
+  "gax-resource:GPU": "gax:NVIDIA-A10",
+  "gax-resource:Harddrive": "gax:Intel-SSD-DC-P4610",
+  "gax-resource:NIC": {
+    "@type": "gax-core:Measure",
+      "gax-core:Value": {
+        "@value": "10.0",
+        "@type": "xsd:float"
+      },
+    "gax-core:Unit": "GBase-T"
+  },
+  "gax-resource:Ramsize": {
+    "@type": "gax-core:Measure",
+      "gax-core:Value": {
+        "@value": "950.0",
+        "@type": "xsd:float"
+      },
+    "gax-core:Unit": "GB"
+  },
+  "gax-resource:Location": "Germany",
+  "gax-resource:Jurisdiction": "Germany",
+  "gax-resource:Name": "GPU node",
+  "gax-resource:Description": "A bare metal node of type resource",
+  "gax-resource:isOperatedBy": {
+    "@id": "ex:ACMEProvider",
+    "@type": "gax-participant:Participant"
+  }
+}

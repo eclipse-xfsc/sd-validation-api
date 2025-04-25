@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "gax": "http://w3id.org/gaia-x/cpu.yaml#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:IntelXeonPlatinum8280",
+  "@type": "gax-participant:Participant",
+  "gax:ProductID": "6CX68AV",
+  "gax:Title": "Xeon Platinum 8280",
+  "gax:Manufacturer": "Intel",
+  "gax:NumberOfCores": "28",
+  "gax:NumberOfThreads": "56",
+  "gax:Frequency": "2,70",
+  "gax:BoostFrequency": "4,00",
+  "gax:Cache": "38,5",
+  "gax:AllowedSocket": "FCLGA3647"
+}

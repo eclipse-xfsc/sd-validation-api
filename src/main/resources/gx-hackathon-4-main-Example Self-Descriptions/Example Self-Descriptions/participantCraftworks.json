@@ -1,0 +1,106 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://w3id.org/gaia-x/participant#",
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "@nest"
+      ],
+      "@id": "https://vc.craftworks.euprogigant.io/sd/participant.json",
+      "@type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "credentialSubject": {
+        "id": "did:web:vc.craftworks.euprogigant.io",
+        "gx-participant:legalName": {
+          "@value": "craftworks GmbH",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "ATBRA.424082-000",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "AT",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Schottenfeldgasse 20/6A",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "1070",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Wien",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "AT",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Schottenfeldgasse 20",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "1070",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Wien",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:parentOrganisation": [],
+        "gx-participant:subOrganisation": [],
+        "gx-participant:termsAndConditions": {
+          "gx-participant:url": {
+            "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+            "@type": "xsd:string"
+          },
+          "gx-participant:hash": {
+            "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:38:10.201Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:vc.craftworks.euprogigant.io",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..s61cd2H0Y_7-OmYWz3wl21Jsh2N9HkxQ5JiQZuc3ldUCtQq_bq2mh6XVzXxoMPdtfRWm_LxdAr6UsPtaD4-nyI2IWqjuwmWVH9ui3By8pbRdwOM711TsWYIlYRNdUwBBc923DT5B90bELg95FCSEk0_CT4XUDT5QotZI4VNGdr-r35zfTj8nEw7qK9Jz3FnZth-PvpECpBWsh0C9E7QJiRptrVts1cRLJ4KSZQ9JF_Fr0Z7qvaY1kuc7DN5ZBnazlb5bW8aXlx1kPhiGtn14j9lSwpnkLUHlu4_iU2UYnp8QHXJbxkk77DgztX6ZTFSDQS-06H0NJ8d0aXfVUPBxew"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655732292651",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-20T13:38:12.651Z",
+      "credentialSubject": {
+        "id": "did:web:vc.craftworks.euprogigant.io",
+        "hash": "d2a9e8fe3ec02800e0d7b459f4df75089217f925a3b111d0b03d4b8a1ad27014"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:38:12.651Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HsV4lFIRfeCgJzXwTVFjOF59-Crcp-3QWEScClJDJwjJwrUFbybT11xxUeBjPAfcNW-FwwVNVARRPYymZVWpvDjkg6gBBH5jAdeRLziJAWk7tvz_2yxlyF7sSGthvWs6OlmSx4QOP5UgnW6ZMiTkoakPJBi35YmJjjtRHKRXK_iEA3rewbq1jTNUhcOhuGWjlk84gdC_RcsfRgMC2YPRPVpA8mGe9lISEPBJn9YBHM469t_WT48UNN9dplFuJPFrHH6XTRXw7zbsmG2De6dQf0AD9UHgLSSQLCNBgLs9wOX2IiOGwySYKH7enZhbLKvNA54vwededc9BQQVe1aNswg",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
+    }
+  }

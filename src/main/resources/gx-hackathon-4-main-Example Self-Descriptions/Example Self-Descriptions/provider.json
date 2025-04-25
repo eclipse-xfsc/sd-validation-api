@@ -1,0 +1,20 @@
+{
+    "name": "Nameless Edge Cloud GmbH",
+    "organisation": {
+        "businessForm": "GmbH",
+        "jurisdiction": "EU"
+    },
+    "contact": [
+        {
+            "type": "email",
+            "value": "support@namelessedgecloud.de"
+        }
+    ],
+    "certifications": [
+        "ISO/IEC 27001",
+        "BSI C5:2020"
+    ],
+    "privacy": {
+        "lawEnforcementRequests": "Yes, within the legal obligation."
+    }
+}

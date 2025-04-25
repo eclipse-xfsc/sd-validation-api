@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#" ,
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "vcard": "https://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gax-core": "http://w3id.org/gaia-x/core#",
+    "gax-participant": "http://w3id.org/gaia-x/participant#",
+    "gax-service": "http://w3id.org/gaia-x/service#",
+    "ex": "http://example.org/"
+  },
+  "@graph": [
+    {
+      "@id": "ex:ACME-SCS-Kubernetes",
+      "@type": "gax-service:ServiceOffering",
+      "gax-service:Name": "SCS Kubernetes",
+      "gax-service:Version": "1.0",
+      "gax-service:providedBy": {
+        "@id": "ex:ACMEProvider",
+        "@type": "gax-participant:Participant"
+      },
+      "dct:description": "Kubernetes Description",
+      "dcat:keyword": [
+        "GDPR Compliant",
+        "ISO 27001",
+        "Kubernetes v1.19"
+      ],
+      "gax-service:MarketingImage": {
+        "@value": "https://object-store-f1a.cloudandheat.com:8080/swift/v1/5bc3bab620bd48b0b9b424ff492050ea/gaia-x-example/2020-Cloud&Heat-Gaia-X-Icon-Cloud98-Bild.png?temp_url_sig=4dd60c7d4980b95e666e29fb63c2c446808339e8&temp_url_expires=1609369200",
+        "@type": "xsd:anyURI"
+      },
+      "gax-service:modified": {
+        "@value": "2020-12-03T12:00:00+01:00",
+        "@type": "xsd:dateTimeStamp"
+      },
+      "gax-service:utilizes": {
+        "@id": "ex:ACME-SCS-OpenStack"
+      },
+      "gax-service:provides": [
+      ],
+      "gax-service:NodeCount": {
+        "worker": {
+          "qudt:minInclusive": 3,
+          "qudt:maxInclusive": 10,
+          "flavor": "Bare-Metal or Flavor name (List)"
+        },
+        "master": {
+          "qudt:minInclusive": 1,
+          "qudt:maxInclusive": 3,
+          "flavor": "Bare-Metal or Flavor name (List)"
+        }
+      },
+      "gax-service:Manager": "List (Gardener | Rancher | K8s Capi | ...)",
+      "gax-service:ApiType": "REST",
+      "gax-service:openApiDescription": {
+        "@id": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/"
+      },
+      "gax-service:termsAndConditions": {
+        "@value": "Placeholder",
+        "@type": "xsd:anyURI"
+      }
+    },
+    {
+      "@id": "ex:ACME-SCS-Managed_Kubernetes-v1_19",
+      "@type": "gax-service:ServiceOffering",
+      "schema:variantOf": {
+        "@id": "ex:ACME-SCS-Kubernetes"
+      },
+      "gax-service:Version": "1.19",
+      "gax-service:Name": "Managed Kubernetes",
+      "gax-service:providedBy": {
+        "@id": "ex:ACMEProvider",
+        "@type": "gax-participant:Participant"
+      },
+      "dct:description": "With Green MK8s you get a reliable and scalable Managed Kubernetes service that runs on a highly energy-efficient and sustainable infrastructure.",
+      "k8s:masterNodeCount": 3,
+      "dcat:keyword": [
+        "GDPR Compliant",
+        "ISO 27001",
+        "Kubernetes v1.19",
+        "Managed Kubernetes"
+      ],
+      "gax-service:MarketingImage": {
+        "@value": "https://object-store-f1a.cloudandheat.com:8080/swift/v1/5bc3bab620bd48b0b9b424ff492050ea/gaia-x-example/2020-Cloud&Heat-Gaia-X-Icon-Cloud98-Bild.png?temp_url_sig=4dd60c7d4980b95e666e29fb63c2c446808339e8&temp_url_expires=1609369200",
+        "@type": "xsd:anyURI"
+      },
+      "dct:modified": {
+        "@value": "2020-11-16T12:00:00+01:00",
+        "@type": "xsd:dateTimeStamp"
+      },
+      "gax-service:termsAndConditions": {
+        "@value": "Placeholder",
+        "@type": "xsd:anyURI"
+      }
+    }
+  ]
+}

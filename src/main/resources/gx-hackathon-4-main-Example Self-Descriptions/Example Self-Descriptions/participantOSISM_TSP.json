@@ -1,0 +1,87 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "http://w3id.org/gaia-x/participant#",
+        "@nest"
+    ],
+    "@id": "https://osism.tech/self-description.json",
+    "@type": [
+        "VerifiableCredential",
+        "LegalPerson"
+    ],
+    "credentialSubject": {
+        "id": "did:web:osism.tech",
+        "gx-participant:name": {
+            "@value": "OSISM GmbH",
+            "@type": "xsd:string"
+        },
+        "gx-participant:legalName": {
+            "@value": "OSISM GmbH",
+            "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+            "@value": "DEB8534.HRB756139",
+            "@type": "xsd:string"
+        },
+        "gx-participant:description": {
+            "@value": "We do cool stuff!",
+            "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+                "@value": "DE",
+                "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+                "@value": "Teckstraße 62",
+                "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+                "@value": "70190",
+                "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+                "@value": "Stuttgart",
+                "@type": "xsd:string"
+            }
+        },
+        "gx-participant:legalAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+                "@value": "DE",
+                "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+                "@value": "Teckstraße 62",
+                "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+                "@value": "70190",
+                "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+                "@value": "Stuttgart",
+                "@type": "xsd:string"
+            }
+        },
+        "gx-service-offering:TermsAndConditions": {
+            "gx-service-offering:url": {
+                "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+                "@type": "xsd:string"
+            },
+            "gx-service-offering:hash": {
+                "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+                "@type": "xsd:string"
+            }
+        }
+    },
+    "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T09:41:20.007Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:delta-dao.com",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..KxkAoXaHhvfCcDfkn76laBeQheO1-kP5yXnS8D6XVN1rmIepFmiNQuWRHvN4SlPGeKk2Hg6DPCpdOMGY0p5j7ExHHUlTSHDbiD-RpGlQgS-rE5zgob6IS-Lz8lIZFU7qKtrRYPeJPj5-KpvQUWajMSN_fw4VTUiS3sW8oXO39SOG4IZXKhgNa7hLokoGSrOWLWaMneAfgvS9VHteuZwNINlCFVXyUTMOCAqPJFDMyj7xEAXRgNCMd6ssP1ZfPdwDKaZeHEpeqyVorIPX716FrdcNkqIlHPufEO-Varjt1CjJ9vJiKFxRtNE9dqQ0iJw3Vc8BZLy3HsC268Ck5Ectcg"
+    }
+}

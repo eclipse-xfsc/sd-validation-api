@@ -1,0 +1,108 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "http://www.w3.org/ns/shacl#",
+            "http://www.w3.org/2001/XMLSchema#",
+            "http://w3id.org/gaia-x/participant#",
+            "@nest"
+        ],
+        "@id": "https://concircle.com/.well-known/participant.json",
+        "@type": [
+            "VerifiableCredential",
+            "LegalPerson"
+        ],
+        "credentialSubject": {
+            "id": "did:web:concircle.com",
+            "gx-participant:name": {
+                "@value": "Concircle Österreich GmbH",
+                "@type": "xsd:string"
+            },
+            "gx-participant:legalName": {
+                "@value": "Concircle Österreich GmbH",
+                "@type": "xsd:string"
+            },
+            "gx-participant:registrationNumber": {
+                "@value": "ATBRA.333525-000",
+                "@type": "xsd:string"
+            },
+            "gx-participant:headquarterAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "AT",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Wie­ner­berg­stra­ße 11",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "1100",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Wien",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-participant:legalAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "AT",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Wie­ner­berg­stra­ße 11",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "1100",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Wien",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-service-offering:TermsAndConditions": {
+                "gx-service-offering:url": {
+                    "@value": "https://compliance.lab.gaia-x.eu/.well-known/termsAndConditions_22.06.01.md",
+                    "@type": "xsd:string"
+                },
+                "gx-service-offering:hash": {
+                    "@value": "41acf7662f571e9f319ee2e59630aa892303921ea2caf74c3c845a1cf450acd8faae85d0735d33f77be2df9b7f2e552d09686ff39c2eca08e595a9631e4ada93",
+                    "@type": "xsd:string"
+                }
+            }
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-21T12:12:02.079Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..PGzMjtJivbzIi_hbZBDm_8G2KL5Ml7ez_IlNRw0UsoFN2GuOYfzGdoPPI9GrK37xSAY2I5yul8064NUpVBHVxSA3egJ3KTCxosLowKJizxtaqC7ctpW66f5t2J0UwbacMWdoH6eWTo3tQ0rZ5cY_Q1MTBvvVFRydxrEgRN93fMUB_tArKrIITwBJIrCBipE9FLuG_zdEH47O1WSyuaq2lZt6-0wPhhPKVLrLKe14mzqURdXbCQ7VpnrwLwwvax8S4TrFhi9PLYGJfG8mwqwAFhAOTAD2JhuUt_aoUabO5AEgIgwO9WhXKZfp8DBV_lcxtJgPEKkDTYj_IbhEeNKKCg"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ParticipantCredential"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655813524969",
+        "issuer": "did:web:compliance.gaia-x.eu",
+        "issuanceDate": "2022-06-21T12:12:04.969Z",
+        "credentialSubject": {
+            "id": "did:web:concircle.com",
+            "hash": "95d15baec3cbc1fb24768e06d980f99bcc89ab78c8f6b0d029b0d6c308bfa8dc"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-21T12:12:04.969Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..KVe_f4-RgnuXGG2w_tsRrYy6zkAsPU9AI0caeeL4f1-fwPybaZTrTEl9dd5wl6OL5biZ4mrvw5svWvjM80dw-9B5shpdo7kfPgd539mknsERO99XSHCEyRTQn84ztewb7O8MUo7GP_nVZLPIBVNgWvq_EloDddvbD6Cg3yLXQrvdnMTLcO-GPnH1-XMfmzhGy3OIR_cCQS4WeLc8ouEcO3X5neeBqIBaYH226Z1CUveGA_QMslLgjN1XizQ64tco9crYt7uoYR2R3_PAfzq91dFnYVhNC-OvOr_VtjAexPr0AVDItTCcLNM0960ch314JztJ99FxqLwHkRF2o0mVIw",
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
+        }
+    }
+}

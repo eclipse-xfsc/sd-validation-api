@@ -1,0 +1,95 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/resource#",
+      "http://w3id.org/gaia-x/participant#",
+      "http://w3id.org/gaia-x/service-offering#"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "@id": "https://compliance.gaia-x.eu/.well-known/serviceComplianceService.json",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/serviceComplianceService.json",
+      "gx-service-offering:providedBy": {
+        "@type": "xsd:string",
+        "@value": "https://compliance.gaia-x.eu/.well-known/participant.json"
+      },
+      "gx-service-offering:name": {
+        "@type": "xsd:string",
+        "@value": "Gaia-X Lab Compliance Service"
+      },
+      "gx-service-offering:description": {
+        "@type": "xsd:string",
+        "@value": "The Compliance Service will validate the shape and content of Self Descriptions. Required fields and consistency rules are defined in the Gaia-X Trust Framework."
+      },
+      "gx-service-offering:webAddress": {
+        "@value": "https://compliance.gaia-x.eu/",
+        "@type": "xsd:anyURI"
+      },
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://compliance.lab.gaia-x.eu/.well-known/termsAndConditions_22.06.01.md",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "41acf7662f571e9f319ee2e59630aa892303921ea2caf74c3c845a1cf450acd8faae85d0735d33f77be2df9b7f2e552d09686ff39c2eca08e595a9631e4ada93",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-service-offering:gdpr": [
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:imprint": "https://gaia-x.eu/imprint/"
+        },
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:privacyPolicy": "https://gaia-x.eu/privacy-policy/"
+        }
+      ],
+      "gx-service-offering:dependsOn": [
+        {
+          "@type": "xsd:anyURI",
+          "@value": "https://compliance.gaia-x.eu/.well-known/serviceManagedPostgreSQLOVH.json"
+        },
+        {
+          "@type": "xsd:anyURI",
+          "@value": "https://compliance.gaia-x.eu/.well-known/serviceManagedK8sOVH.json"
+        }
+      ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T14:51:42.629Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:compliance.gaia-x.eu",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TWXL6mTwz8-QCC5KJ0Lrw4jX00e4XkUpzLLFn9LAalF81hGgd67OheaY5VXx_zHYQK_kFihK4Xd9zSY8leO192dxVrHWdk162An2U2tedzUN6hKTIabY7ixwTRCYXPYOOrgJ864QZZgTL7dk_-s7xO4H5wOzVCZ42cuKWvjDHEX1WGuKaHbcCUJoNkUOqxnH0uPRXH-shRtX6OtowEZCFTb4-cpevrOmFyuNrR0jfdJmHoGDB3skjzdYDMTp_52VOJodkTG_zX83NcsJ3MdDjWT4eYTJ-LVtfkzjMdMyN2C6ChPqapjKbQi11ZGlcwzNq9K4ETckMv4ego2zAoPD9g"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655650305642",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-19T14:51:45.643Z",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/serviceComplianceService.json",
+      "hash": "43f98805a5eafab77467572e66dc1caad8afd285409e768e0513b52143b96a24"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T14:51:45.642Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..hgrEclX6DZCquGk2W9LVbn8MsvKkMfpq4-_edBW9m1t1rBP-KN6F8YnY3D35q6v_nUaouq-zt9BRPC7BB6lLqaqrSteCADagSiraqAOzwP8XPMXczKESC2Byq5zk73Uga4sVnN4qjBxFF3qd15gHoOvUM5W41RgRfHYvWN45tfV5aHCHXlSjxd5s-KsOislyWa0k71QkQyquIxD-aq2xFA6AKTfpwHQAUdpyZn3gE5_Pjb-C4p8jZAk5UvH9ASm4cBV_CFsilJz6A8NsieCQVWui5qyLq4eDHXFRc4Wc4sPDAdhv3Kd3Tuz7YljwRYmdJy9AL5MlKMNvNeeJvwj6qg",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

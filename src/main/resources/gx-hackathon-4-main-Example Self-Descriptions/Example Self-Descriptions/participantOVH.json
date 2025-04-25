@@ -1,0 +1,112 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "@nest"
+    ],
+    "@id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+    "@type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+      "gx-participant:name": {
+        "@value": "OVH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "OVH",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "FR5910.424761419",
+        "@type": "xsd:string"
+      },
+      "gx-participant:leiCode": {
+        "@value": "9695007586GCAKPYJ703",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "FR",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "2 rue Kellermann",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "59100",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Roubaix",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "FR",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "2 rue Kellermann",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "59100",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Roubaix",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T07:10:55.428Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:compliance.gaia-x.eu",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..M3Qat3AP4z6320OXOFD9ejZtLzoXT97uzUF0t-dcKFWIN3BySNEr0_nLn1USCBCiEAxLqtbphUTvsiod0o8BtiLYg7bXrzR3SGGeweKfNRY0HXLdbz0Mc61B-NHgTS6Xi322WVMoa4Sf3NHV6zrBucalHlGmNyG4zQ0XN7iWFW8gFoQyP1EkrwDpRxNS49CkgOXtmw9CyO2T5tEwgwxO-rkUlw60jqeMqa63Db3pHBqIU2GXNLUUaEcYnaTMA3F68s2hAcPq79n66k-lZnrZ1bDGKnT7hRxuecZJlmOQA4CTtB2WgKBGhwUTmNDTB1KFD-eT_j9FwN0ezDnJXKf2ZQ"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655622657397",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-19T07:10:57.397Z",
+    "credentialSubject": {
+      "id": "https://compliance.gaia-x.eu/.well-known/participantOVH.json",
+      "hash": "a1b864ff9db8cecfd8721f45b5d8d2d2f24469945c0b63dfa8e264dbfead189c"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T07:10:57.397Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..quGjXX0Xflpq3U4mIKuX70Uwmyfjan3ta2gGQxxe-q-nGU7OvjMP3njOZi2a_INbu-7yA3PWwIbez95RgaBHJm4G0ZLfuKEdlpSDiXfZveRd9tc-b86asy35kO5R3UGnWYgiK4qWAasfrVNRI8lD1y_8T--cwTBIjQ3539GwRvQklrvGgd8sp4dWBIywIHbMri-XZTKnDGo-vQS1QIkFAIEzXI0z_zCal84PINVJ35FBBFrrYFgUir1ESpirmPHlMx50Tb5KRkpsUJQqgQVy4o2-eA2xSa0wRW4cHq84O4SStpyCwN1JAbz73p94fAg8c60xlzMuIfhFfz8mKxL-Ew",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

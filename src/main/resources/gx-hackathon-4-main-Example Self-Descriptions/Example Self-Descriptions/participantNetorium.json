@@ -1,0 +1,98 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "http://www.w3.org/ns/shacl#",
+            "http://www.w3.org/2001/XMLSchema#",
+            "http://w3id.org/gaia-x/participant#",
+            "@nest"
+        ],
+        "@id": "https://gx.aca.ntrm.de/.well-known/participant.json",
+        "@type": [
+            "VerifiableCredential",
+            "LegalPerson"
+        ],
+        "credentialSubject": {
+            "id": "did:web:gx.aca.ntrm.de",
+            "gx-participant:name": {
+                "@value": "netorium AG",
+                "@type": "xsd:string"
+            },
+            "gx-participant:legalName": {
+                "@value": "netorium AG",
+                "@type": "xsd:string"
+            },
+            "gx-participant:registrationNumber": {
+                "@value": "DEM1906.HRB31986",
+                "@type": "xsd:string"
+            },
+            "gx-participant:headquarterAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "DE",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Borsigstr. 11-13",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "65205",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Wiesbaden",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-participant:legalAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "DE",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Borsigstr. 11-13",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "65205",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Wiesbaden",
+                    "@type": "xsd:string"
+                }
+            }
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-21T09:20:37.235Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ewXPZ3Oj3_WwrpJNMN5G0p81LUSS6h56ayjP2VF_bRlmHtfS0RQmT9-fu9aAKdgc8zjzUArO6IAiTAZ7IuySUvytO9AN3Z8jQlartFw0sCAvxlQthLfFzh_gZ_29rPdIn5pQEg4lWZcSR0hJ_fFHlQSQkfabml31DPaURtWIg1uZM4yG2aUraz5lwPY2zr9tbeBlRB5SzmjkHo8I3dFqdUFlO6AMMt78b9PfEVVUMSNIBF1fkH6yezBotAojNM8dEgLe-CxbQaDzDrFGrvHbALIb1QwFPEq9QKqlqJMNimkQPQ1vTe5FbtBrpPSyeW-6d6PiffmfqLKtmNBbSkLKag"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ParticipantCredential"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655803240057",
+        "issuer": "did:web:compliance.gaia-x.eu",
+        "issuanceDate": "2022-06-21T09:20:40.057Z",
+        "credentialSubject": {
+            "id": "did:web:gx.aca.ntrm.de",
+            "hash": "5503164c396dbb6825b790dfb3f6e28dde51c61736f83690c87c693beb4b60cb"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-21T09:20:40.057Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..RjZVswnYhKER7ts40BZDubqAmbguQhSMQF4cXbUfbQdFa2sm2CDON542d9SjPgMFGFNQquUCgy4pLoA0JV4043akwN9R-E2uytGPZUlxc8kjjm072oUfSeiDv8w0PO6bkzQDWTeFzNl2mgbatPOqk8jnur7T28NOok9ZVPXDg61dxpSMT6L0S8d2R2kZwF8xIVJu6YzYWkVa66JWMrAUz-JAFjmaJE4sbJmqLH99Kz0n9oyq1NzlMdnMhjowfneV_uZNyibJ9l0PZXw7zYuI8g3-jHEdSk68BC8hf60qAWAmBO03HVv9aDTFkR16CEcUbpJWmqKRwVt7dG4htm_yDQ",
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
+        }
+    }
+}

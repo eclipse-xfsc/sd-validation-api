@@ -1,0 +1,110 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://w3id.org/gaia-x/participant#",
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "@nest"
+      ],
+      "@id": "https://vc.softwareag.euprogigant.io/sd/participant.json",
+      "@type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "credentialSubject": {
+        "id": "did:web:vc.softwareag.euprogigant.io",
+        "gx-participant:legalName": {
+          "@value": "Software Aktiengesellschaft",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "DEM1103.HRB1562",
+          "@type": "xsd:string"
+        },
+        "gx-participant:leiCode": {
+          "@value": "529900M1LIO0SLOBAS50",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Uhlandstrasse 12",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "64297",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Darmstadt",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "DE",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Uhlandstrasse 12",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "64297",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Darmstadt",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:parentOrganisation": [],
+        "gx-participant:subOrganisation": [],
+        "gx-participant:termsAndConditions": {
+          "gx-participant:url": {
+            "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+            "@type": "xsd:string"
+          },
+          "gx-participant:hash": {
+            "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:39:28.962Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:vc.softwareag.euprogigant.io",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NVQ40GIybNTQwmI3pJDLTjhXMpDMsbbGv1uvrW8mIoMXEPGk2tYk9oKYkEHQvLTEsGbR2lyq6c34p-0q_3POA2umfbfsDu5GydSk4aj1uGrTcSVni6ANiVmOMpykbGDFyPNASS2fYggxtCtv2dQ1lWAQbEWttRzsUTgl5pY_SEQ5-KH8spmCjBEFiTy4J4xej50BjmaP5Tze7suW0iwFmywtyqNIW5HA50T1Z9y5RHM0f_JY_0nSF6bKXc2Stac6nYeiQedX7eB7zs1HHtYzrpMkAWnmNkwahVHz5t7Wzg4hbF5q5oNEdTfKnT_ZkGQrI1HIRnhH1czPorAjkP_6dg"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655732371506",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-20T13:39:31.506Z",
+      "credentialSubject": {
+        "id": "did:web:vc.softwareag.euprogigant.io",
+        "hash": "b06c5e8975f7f3e633b33a58a9ea9424fa8db366910f51bdf2c3d67f79196fa5"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-20T13:39:31.506Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kdR98r6-s7T5sA4OgFXegD1M6E2Ii4cQRcEf2xKZIuavCatyjw-obi_1MAZS6fB7LrCPaPcz5WVnZhiXjONa5hguryDipW_2S08Xq8QRrpoD_p1jZCIIEIbU-Jr6AJ8aSb9ncsgAl3lKasxWL13T_xts18PyfnvfwSYivfM3Cei5NkQL6e7WX4lyM3Fq53bC4Rc28U4gIarBC8Zfz25dRHQwAf7voQxvC8t_4W5Xi3DJroT4vWhWuT1jZo5PR6Q7ihkYqFLud2AUmZCda9AiGHVIZBVWOzztVi4LhdOIG9bPCsiHxhXjesLJpqN7rUhEEOdnk4ApO0TkgxrxZS3HAw",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
+    }
+  }

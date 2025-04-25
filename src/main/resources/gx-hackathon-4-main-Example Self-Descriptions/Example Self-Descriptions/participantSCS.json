@@ -1,0 +1,94 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "http://www.w3.org/ns/shacl#"
+    ],
+    "@id": "https://scs.community/LegalPerson-khnps661nnlgghoq4is18",
+    "@type": [
+      "LegalPerson",
+      "VerifiableCredential"
+    ],
+    "credentialSubject": {
+      "id": "https://scs.community/LegalPerson-khnps661nnlgghoq4is18",
+      "gx-participant:parentOrganisation": [],
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "DE",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Pariser Platz 6a",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "10117",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Berlin",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "DE",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Pariser Platz 6a",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "10173",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Berlin",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "VR7217",
+        "@type": "xsd:string"
+      },
+      "gx-participant:note": {
+        "@value": "Test Self Description signed by deltaDAO for the Gaia-X Hackathon #4",
+        "@type": "xsd:string"
+      }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-21T12:57:20.143Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:test.delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..7psNbBKRS1aOCIarPazQn-iVAmCPGso1TxOz4rXWgf3iZg_A4lJtqo6sSPhGkGLvqI9v54kThID2L67K_W5BytKt9nC4UHzq4-lcug3nPWLuNvmsCRl7BMejHQ0VQCCWH1pUWkRp2qvlzIo2HBhvP1OM17eep_Wiz7H9X2T2OtLZ6wfiEm1z71_ynI8trRIBhSKesnqwJ0yAdmyCvyPpZxU5apXsPNY9P7e6vFneUfya-e8aaAT4eSzSzVtubdCF-6uccAzHkC74M0Ful9pGktH1BBwmLKPEeEeeftw14EFDSgiPeuphqdvxGu0w5_mOwjnYzyR4pcYXyCEu8ugAFg"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655816241478",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-21T12:57:21.478Z",
+    "credentialSubject": {
+      "id": "https://scs.community/LegalPerson-khnps661nnlgghoq4is18",
+      "hash": "691e31773fbdf18c5a5d904340c62adc10a879c34b658fa741284717cef0199f"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-21T12:57:21.478Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..My30ptDIuAHLLwdU62p707IZ3QbZ2UGxH4xt3pVsMAPrNW26Mh11Z9WUmIySifpjAMWtM3n2r8-FaJ8r9AUQxH_VLytVclGC8XtJTrv47iojNYoNel9sjVOrVi8SBsz-Ey58_Kbh0V81fAmDpY3-ILe8ni-RUq7y9NWWXTJvk5-2f-mKT0cbYHjq31IsoUQEzrzXFCIO9MpijRtqpIZqRFTfEIW0rAjeAr9kP0g_zw2x8xdmAYg2x5BGdK36axT4NnRpve6g4BF88MOgtUCG8P43jVKUEAHg8x99DPWtmwGlTxPQFN-r3AE7pPcmesn7C4bTI5bVIATkBAysJNr0_g",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

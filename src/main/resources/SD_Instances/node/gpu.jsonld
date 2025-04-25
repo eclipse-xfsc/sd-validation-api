@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "gax": "http://w3id.org/gaia-x/gpu.yaml#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:NvidiaA10PCIe",
+  "@type": "gax-participant:Participant",
+  "gax:ProductID": "GA102-890-A1",
+  "gax:Title": "A10 PCIe",
+  "gax:Manufacturer": "Nvidia",
+  "gax:Memory": "24GB DDR6",
+  "gax:Connection": "PCIe Gen4: 64GB/s"
+}

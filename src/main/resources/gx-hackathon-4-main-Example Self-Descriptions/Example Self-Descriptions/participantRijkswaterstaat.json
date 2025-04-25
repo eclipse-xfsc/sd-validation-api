@@ -1,0 +1,167 @@
+{
+    "selfDescriptionCredential": {
+      "@context": [
+        "http://www.w3.org/ns/shacl#",
+        "http://www.w3.org/2001/XMLSchema#",
+        "http://w3id.org/gaia-x/participant#",
+        "@nest"
+      ],
+      "@id": "https://delta-dao.com/.well-known/participantRijkswaterstaat.json",
+      "@type": [
+        "VerifiableCredential",
+        "LegalPerson"
+      ],
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantRijkswaterstaat.json",
+        "gx-participant:name": {
+          "@value": "DMI Smart Mobility Inno Hub, Rijkswaterstaat Centrale Informatievoorziening",
+          "@type": "xsd:string"
+        },
+        "gx-participant:legalName": {
+          "@value": "Dutch Ministry of Infrastructure and Water Management",
+          "@type": "xsd:string"
+        },
+        "gx-participant:description": {
+          "@value": "Rijkswaterstaat is the executive agency of the Ministry of Infrastructure and Water Management, dedicated to promote safety, mobility and the quality of life in the Netherlands.",
+          "@type": "xsd:string"
+        },
+        "gx-participant:registrationNumber": {
+          "@value": "27364178",
+          "@type": "xsd:string"
+        },
+        "gx-participant:ethereumAddress": {
+          "@value": "0xa98A6eefbAE870b88a9C7A43f4b50066A01c93b6",
+          "@type": "xsd:string"
+        },
+        "gx-participant:headquarterAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "NLD",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Derde Werelddreef 1",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "2622 HA",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Delft",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:legalAddress": {
+          "@type": "gx-participant:Address",
+          "gx-participant:country": {
+            "@value": "NLD",
+            "@type": "xsd:string"
+          },
+          "gx-participant:street-address": {
+            "@value": "Derde Werelddreef 1",
+            "@type": "xsd:string"
+          },
+          "gx-participant:postal-code": {
+            "@value": "2622 HA",
+            "@type": "xsd:string"
+          },
+          "gx-participant:locality": {
+            "@value": "Delft",
+            "@type": "xsd:string"
+          }
+        },
+        "gx-participant:parentOrganisation": [
+          {
+            "@type": "gx-participant:LegalPerson",
+            "gx-participant:legalName": {
+              "@type": "xsd:string",
+              "@value": "Dutch Ministry of Infrastructure and Water Management"
+            },
+            "gx-participant:registrationNumber": {
+              "@value": "27364178",
+              "@type": "xsd:string"
+            },
+            "gx-participant:legalAddress": {
+              "@type": "gx-participant:Address",
+              "gx-participant:country": {
+                "@value": "NLD",
+                "@type": "xsd:string"
+              },
+              "gx-participant:street-address": {
+                "@value": "Rijnstraat 8",
+                "@type": "xsd:string"
+              },
+              "gx-participant:postal-code": {
+                "@value": "2515 XP",
+                "@type": "xsd:string"
+              },
+              "gx-participant:locality": {
+                "@value": "Den Haag",
+                "@type": "xsd:string"
+              }
+            },
+            "gx-participant:headquarterAddress": {
+              "@type": "gx-participant:Address",
+              "gx-participant:country": {
+                "@value": "NLD",
+                "@type": "xsd:string"
+              },
+              "gx-participant:street-address": {
+                "@value": "Rijnstraat 8",
+                "@type": "xsd:string"
+              },
+              "gx-participant:postal-code": {
+                "@value": "2515 XP",
+                "@type": "xsd:string"
+              },
+              "gx-participant:locality": {
+                "@value": "Den Haag",
+                "@type": "xsd:string"
+              }
+            }
+          }
+        ],
+        "gx-participant:TermsAndConditions": {
+          "gx-participant:url": {
+            "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+            "@type": "xsd:string"
+          },
+          "gx-participant:hash": {
+            "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-24T09:23:36.776Z",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:delta-dao.com",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..XnvAiQaBgRCPbcx7BhwVUOj0tlFvNqtz-rQBi2MQBG8t4RuQrluDR_0Mr091rNe7FVl63fSu-0DT4T-3BgfcjUaKetpJcj35dckTLQQAgiYS9ROvD3jKyCEf60VYW_dyIUx7enSPTkizbEfcN20_LqetaeqU4UVGfSUXd2xFuiost8FPGR2sN_aO7UUaXcvib49MK8iQIk8gaaU1yyqsEquujCIj7aO-N2JCQY8jGJRs5GfS8z4EHs_FaZCqciuNi_579CR8bshskLjh3FBn0Hyjbtv0i8fejSn2dlYMZSdUbqvYyEKW3Pwl--t4jVSbq5f-FoXaXdFGHeTVdMu6jg"
+      }
+    },
+    "complianceCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@type": [
+        "VerifiableCredential",
+        "ParticipantCredential"
+      ],
+      "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1656062618756",
+      "issuer": "did:web:compliance.gaia-x.eu",
+      "issuanceDate": "2022-06-24T09:23:38.756Z",
+      "credentialSubject": {
+        "id": "https://delta-dao.com/.well-known/participantRijkswaterstaat.json",
+        "hash": "115fdd5abb45aa97d88e6be0eb5016a75446d89d52eb0e7364b547a9f0cf8ee2"
+      },
+      "proof": {
+        "type": "JsonWebKey2020",
+        "created": "2022-06-24T09:23:38.756Z",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..aREo72lB56puUb_AtC1gVQDAPgtRyDfWhrIBAbiqroFXzPhCf0RTUOP0s9-PLz-Uc3xLadsEJyGI-SEeRw3W3WsyHRREmfE6GwHJqM8uclaQc3bKpg6tdhqOyPpZg9mVR7vJXbUX-JbwUC0bcHcNz5-e2qRGuvjJ9ehy_ZkkfUYboS39ZpPBFtnYLUxHdkGX4uKH2Co-nm9vZ88q4a0ZWWbQ2h0wFsOydbXc6lap3w81sqD9kPnFRy3k5uOmQD_f-vq0SgPhX6G8RXCgn9YjVdDbTQk0rY_L-4sZZI0iEs4yeLnB4DivQZXBqbisQTC8l2N9eUBw75kAs4RGLsbtjA",
+        "verificationMethod": "did:web:compliance.gaia-x.eu"
+      }
+    }
+  }

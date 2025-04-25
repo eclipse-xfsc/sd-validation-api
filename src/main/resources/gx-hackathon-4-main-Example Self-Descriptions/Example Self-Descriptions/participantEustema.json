@@ -1,0 +1,98 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "@nest"
+    ],
+    "@id": "https://gx.eustema.it/.well-known/participant.json",
+    "@type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "credentialSubject": {
+      "id": "did:web:gx.eustema.it",
+      "gx-participant:name": {
+        "@value": "Eustema",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "Eustema",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "ITRI.05982771007",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "IT",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Via Carlo Mirabello, 7",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "00195",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Rome",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "IT",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "Centro direzionale Via G. Porzio, 4 - Isola C/2",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "80143",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Naples",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-20T16:24:32.000Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:gx.eustema.it",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..WNS_YGc3B9_sCvAM_xYY16FkDdoiLKrdarzq_Qhcl1AR-p6zQQYoTouMQoxp-GwWcj2DiAqvlD_mXlJz3mpDMZOPRDgg5Rto2_pY6UklAYRrjxkl-CCD7XZqcFFokr_muc2XQ8B1lsq0qw5MPplR6iIi6f_uvA-c0TxPAhmEROOVVJpjOT-kJIFnNTacCh5O6pjXL2oyzTAa_oH9GJmGkadlDYnO4nS2h9KP-SwRvo_9CanrUNzVvxYJc3XB1QbzIEDtWzWptR5fQjZIaIOc-WANoBUeTRdnwoNrpNQ9AJs5-Z0Emnnu4jUe0mAk1fd_f0i5KKe49P5xucb2rqPx7Q"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655742274334",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-20T16:24:34.334Z",
+    "credentialSubject": {
+      "id": "did:web:gx.eustema.it",
+      "hash": "92842430a77fecfde3cf1c98e538dac6a4f3de165d1a65b3d56762359915782a"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-20T16:24:34.334Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..FwewImyU5hEKMx-CzorLLlTkgrWy5liGX_sBTaZbKAdWIXvdD7BG54zbG-NClFfUpHBEg9tBtWSlbDSEYVlm1jKurGPzAkm3DJkpCw1fQQ4TXILpICLJuYdXNw-qtwl1Kw1b8JShLAT0jx2TnkTmKXIGnf0ANbmQKTrPfDiHhzlZyM5vdyuLypZH4gGe_PJUCqpa-bRGvqcS2RotzlyPOhQO-6A6P1OHMS31oC3yJ8hMPVbFGcJpc--LyhxNiYJjOpVcqFvGLADwy5jNKJ1pJ9y9MVpPzlZ9FNyy2Y2SF9ifj8Mr5AzywFBgG6BzLSLW0m-5PY2j0Kbha6Hs-5msWw",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

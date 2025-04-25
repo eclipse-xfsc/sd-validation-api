@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "gax": "http://w3id.org/gaia-x/cpu.yaml#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:IntelSSDDCP4610",
+  "@type": "gax-participant:Participant",
+  "gax:ProductID": "SSDPE2KE016T801",
+  "gax:Title": "SSD DC P4610",
+  "gax:Manufacturer": "Intel",
+  "gax:Capacity": "1.600",
+  "gax:FormFactor": "2,5",
+  "gax:ReadSpeed": "3200",
+  "gax:WriteSpeed": "2100",
+  "gax:Protocol": "NVME 1.2"
+}

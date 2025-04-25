@@ -1,0 +1,83 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/resource#",
+      "http://w3id.org/gaia-x/participant#",
+      "http://w3id.org/gaia-x/service-offering#"
+    ],
+    "@id": "https://dl.dnation.cloud/.well-known/pilotTrustService.json",
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "credentialSubject": {
+      "id": "https://dl.dnation.cloud/.well-known/pilotTrustService.json",
+      "gx-service-offering:providedBy": {
+        "@type": "xsd:string",
+        "@value": "https://dl.dnation.cloud/.well-known/dnation.json"
+      },
+      "gx-service-offering:name": {
+        "@type": "xsd:string",
+        "@value": "Pilot Trust Engine"
+      },
+      "gx-service-offering:description": {
+        "@type": "xsd:string",
+        "@value": "The Pilot Trust-Service manages the Data-to-Compute workflow."
+      },
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://gitlab.com/gaia-x/gaia-x-community/mvg-demonstrator/gx-mvg-trust/-/raw/main/LICENSE",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "3c53f10645e2971fa3f1627103708b3a95a67418f1e295735189c20dafd3d90ecab5d252184c87fcc76e96603e1d34f27f52122540425211df4b88f5081af1db",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-service-offering:gdpr": [
+        {
+          "@value": "gdpr attribute",
+          "@type": "xsd:string"
+        }
+      ],
+      "gx-service-offering:policies": [
+        {
+          "@value": "policy attribute",
+          "@type": "xsd:string"
+        }
+      ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-21T10:00:22.642Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:dl.dnation.cloud",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Unblfy4UC7FCGHYyOWJZb7i8z6N_tZYCO8tL1j6uv9yAYdjy6l5aTD4b-Sq11-ZfBRIw5HvGN68rOMkdVG15mTaCCCAyAmgEaxTTJXjF2jhABCtlgy2Y8wmDszNZlWHeksnLS-fIdV7GxgwkGM-5tkeuYqjnRzXkGi4uNs_xs_Vxht2tt7xe8vFYI8UQoegqvNO9q5OJpJFMfynU2EgpkmD7A5y9R-M2bKHyMr-2z8Z4Kitt49HWhZOxz8Wl44QG6Z0KTIJId3KOZ7XMZ-6lgwxXd8Rn2y138rdlvL0M5wObjwrvIX3KU2PhqZoCqWRoW3pMBGGZOhb8vDa52EpcWw"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655805625356",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-21T10:00:25.356Z",
+    "credentialSubject": {
+      "id": "https://dl.dnation.cloud/.well-known/pilotTrustService.json",
+      "hash": "bbf9416b3bc045f54559c0ec51ea6d20f80b60b7bd5db712d13ef27cb5849403"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-21T10:00:25.356Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ugL8zfutsfI47yUp2T-pMR3Mt-TeR9kJR-MLbZqN38dgs7f8hJKWbucRp2AGRopbz6CvJYvy7BWqR3Ygm0HFlVUoxC53-t4z7Eq6GNhqMBnkLghCBhS9LaAcTiGhckPOemUGnm_MA3_cmgvAp8szVYUuNP6_rbzjhXg5nwtiFFaMGloZz1F6zfcZEQdhRsZtYQiwDSQtX0rFYMPKkyVTQ-m4o6nJIaXfHw4aZqalLPF4xqGui60XVVS8SGNcopuyGMv78SltG98BsfczFbTvY612eM2k9A8U5DKBpgMZo4eKNHmBsimQN5v7b8qDUcpRcTebEQaLrvmEUpz-n-0VNA",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

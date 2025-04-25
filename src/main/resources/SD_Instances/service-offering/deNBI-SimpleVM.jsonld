@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#" ,
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "vcard": "https://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gax-core": "http://w3id.org/gaia-x/core#",
+    "gax-participant": "http://w3id.org/gaia-x/participant#",
+    "gax-service": "http://w3id.org/gaia-x/service#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:de_NBI_SimpleVM_Service",
+  "@type": "gax-service:ServiceOffering",
+  "gax-service:ServiceTitle": "de.NBI - SimpleVM Service",
+  "gax-service:Version": "0.1",
+  "gax-service:providedBy": {
+    "@id": "ex:de_NBI" ,
+    "@type": "gax-participant:Provider"
+  },
+  "dcat:keyword": [
+    "VM",
+    "virtual machine",
+    "Bioinformatics",
+    "remote desktop"
+  ],
+  "gax-service:MarketingImage": {
+    "@value": "https://bonian.de/gaiax/icon-deNBI-SimpleVM-264x480.jpeg",
+    "@type": "xsd:anyURI"
+  },
+  "gax-service:Screenshot": [
+    {
+      "schema:contentUrl": "https://bonian.de/gaiax/screenshot-denbi.jpeg",
+      "rdfs:comment": "deNBI Services"
+    },
+    {
+      "schema:contentUrl": "https://bonian.de/gaiax/screenshot-denbi2.jpeg",
+      "rdfs:comment": "deNBI Services"
+    }
+  ],
+  "gax-service:WebAddress": {
+    "@value": "https://www.denbi.de/EXAMPLE/SimpleVM" ,
+    "@type": "xsd:anyURI"
+  },
+  "gax-service:ProvisionType": "E.g., Hybrid" ,
+  "gax-service:ServiceModel": "E.g., IaaS" ,
+  "dct:modified": {
+    "@value": "2020-11-16T12:00:00+01:00",
+    "@type": "xsd:dateTimeStamp"
+  },
+  "gax-service:ApiType": "X2Go",
+  "dct:description": "SimpleVM streamlines the launch of single Virtual Machines (VMs). It takes care of the network setup, SSH access and other tasks like e.g., volume mounts and provides the user with quick access to the machine. Once you have configured your VM to your liking e.g., by installing software, it can be shared simply by creating a snapshot and providing this snapshot to other users.",
+  "gax-service:DeploymentDetails": {
+    "gax-service:requires": {
+      "gax-service:MinCpuCore": 1,
+      "gax-service:MinMemory": {
+        "@type": "gax-core:Measure",
+          "gax-core:Value": {
+            "@value": "4096.0",
+            "@type": "xsd:float"
+          },
+        "gax-core:Unit": "MB"
+      },
+      "gax-service:UploadBandwidth": {
+        "@type": "gax-core:Measure",
+          "gax-core:Value": {
+            "@value": "16.0",
+            "@type": "xsd:float"
+          },
+        "gax-core:Unit": "Mbit/s"
+      },
+      "gax-service:DownloadBandwidth": {
+        "@type": "gax-core:Measure",
+          "gax-core:Value": {
+            "@value": "10.0",
+            "@type": "xsd:float"
+          },
+        "gax-core:Unit": "Mbit/s"
+      }
+    },
+    "gax-service:Instructions": {
+      "gax-service:DeploymentScriptUrl": "https://cloud.denbi.de/project-types/",
+      "gax-service:Repository": {
+        "schema:url": "https://cloud.denbi.de/simplevm/",
+        "gax-service:Login": "username",
+        "gax-service:Password": "password"
+      }
+    }
+  },
+  "gax-service:Billing": [
+    {
+      "@type": "gax-service:PayPerUseModel",
+      "gax-service:Price": {
+        "@type": "gax-core:Measure",
+        "gax-core:Value": {
+          "@value": "0.0",
+          "@type": "xsd:float"
+        },
+        "gax-core:Unit": "EUR"
+      }
+    },
+    {
+      "@type": "gax-service:BasicPaymentModel",
+      "gax-service:Price": {
+        "@type": "gax-core:Measure",
+        "gax-core:Value": {
+          "@value": "0.0",
+          "@type": "xsd:float"
+        },
+        "gax-core:Unit": "EUR"
+      },
+      "gax-service:FrequenceOfPayment": "month"
+    }
+  ],
+  "gax-service:termsAndConditions": {
+        "@value": "Placeholder",
+        "@type": "xsd:anyURI"
+  }
+}

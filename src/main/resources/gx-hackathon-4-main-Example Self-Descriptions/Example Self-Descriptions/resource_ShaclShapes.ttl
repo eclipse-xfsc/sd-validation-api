@@ -1,0 +1,518 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix gax-validation:  <http://w3id.org/gaia-x/validation#> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix gax-core: <http://w3id.org/gaia-x/core#> .
+@prefix gax-node: <http://w3id.org/gaia-x/node#> .
+@prefix gax-resource: <http://w3id.org/gaia-x/resource#> .
+@prefix gax-participant: <http://w3id.org/gaia-x/participant#> .
+@prefix gax-service: <http://w3id.org/gaia-x/service#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix did: <https://www.w3.org/TR/did-core/#> .
+
+gax-validation:ResourceShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:Resource ;
+	sh:property [ sh:path gax-resource:name ;
+				  sh:name "name" ;
+				  sh:order 1 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path dct:description ;
+				  sh:name "description" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:aggregationOf ;
+				  sh:name "aggregation of" ;
+				  sh:order 3 ;
+				  sh:minCount 0 ;
+				  sh:nodeKind sh:IRI ] ;
+.
+
+gax-validation:PhysicalResourceShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:PhysicalResource ;
+	sh:property [ sh:path gax-resource:maintainedBy ;
+				  sh:name "maintained by" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:ownedBy ;
+				  sh:name "owned by" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:manufacturedBy ;
+				  sh:name "manufactured by" ;
+				  sh:order 3 ;
+				  sh:minCount 0 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:locationAddress ;
+				  sh:name "location address" ;
+				  sh:order 4 ;
+				  sh:minCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:name ;
+				  sh:name "name" ;
+				  sh:order 1 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path dct:description ;
+				  sh:name "description" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:aggregationOf ;
+				  sh:name "aggregation of" ;
+				  sh:order 3 ;
+				  sh:minCount 0 ;
+				  sh:nodeKind sh:IRI ] ;
+.
+
+gax-validation:VirtualResourceShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:VirtualResource ;
+	sh:property [ sh:path gax-resource:copyrightOwnedBy ;
+				  sh:name "copyright owned by" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:license ;
+				  sh:name "license" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:name ;
+				  sh:name "name" ;
+				  sh:order 1 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path dct:description ;
+				  sh:name "description" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:aggregationOf ;
+				  sh:name "aggregation of" ;
+				  sh:order 3 ;
+				  sh:minCount 0 ;
+				  sh:nodeKind sh:IRI ] ;
+.
+
+gax-validation:InstantiatedVirtualResourceShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:InstantiatedVirtualResource ;
+	sh:property [ sh:path gax-resource:maintainedBy ;
+				  sh:name "maintained by" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:hostedOn ;
+				  sh:name "hosted on" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:tenantOwnedBy ;
+				  sh:name "tenant owned by" ;
+				  sh:order 3 ;
+				  sh:minCount 1 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:endpoint ;
+				  sh:name "endpoint" ;
+				  sh:order 4 ;
+				  sh:minCount 1 ;
+				  sh:node gax-validation:AddressShape ] ;
+	sh:property [ sh:path gax-resource:copyrightOwnedBy ;
+				  sh:name "copyright owned by" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:license ;
+				  sh:name "license" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:name ;
+				  sh:name "name" ;
+				  sh:order 1 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path dct:description ;
+				  sh:name "description" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:aggregationOf ;
+				  sh:name "aggregation of" ;
+				  sh:order 3 ;
+				  sh:minCount 0 ;
+				  sh:nodeKind sh:IRI ] ;
+.
+
+gax-validation:AddressShape
+	a sh:NodeShape ;
+	sh:targetClass vcard:Address ;
+	sh:property [ sh:path vcard:country-name ;
+				  sh:name "country-name" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path vcard:gps ;
+				  sh:name "gps" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path vcard:street-address ;
+				  sh:name "street-address" ;
+				  sh:order 3 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path vcard:postal-code ;
+				  sh:name "postal-code" ;
+				  sh:order 4 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path vcard:locality ;
+				  sh:name "locality" ;
+				  sh:order 5 ;
+				  sh:datatype xsd:string ] ;
+.
+
+
+gax-validation:SoftwareShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:Software ;
+	sh:property [ sh:path gax-resource:copyrightOwnedBy ;
+				  sh:name "copyright owned by" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:license ;
+				  sh:name "license" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:name ;
+				  sh:name "name" ;
+				  sh:order 1 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path dct:description ;
+				  sh:name "description" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:aggregationOf ;
+				  sh:name "aggregation of" ;
+				  sh:order 3 ;
+				  sh:minCount 0 ;
+				  sh:nodeKind sh:IRI ] ;
+.
+
+gax-validation:ImageShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:Image ;
+	sh:property [ sh:path gax-resource:type ;
+				  sh:name "type" ;
+				  sh:order 1 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:size ;
+				  sh:name "size" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:node gax-validation:MeasureShape ] ;
+	sh:property [ sh:path gax-resource:minRamSize ;
+				  sh:name "min ram size" ;
+				  sh:order 3 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:node gax-validation:MeasureShape ] ;
+	sh:property [ sh:path gax-resource:diskFormat ;
+				  sh:name "disk format" ;
+				  sh:order 4 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:containerFormat ;
+				  sh:name "container format" ;
+				  sh:order 5 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:checkSum ;
+				  sh:name "check sum" ;
+				  sh:order 6 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:version ;
+				  sh:name "version" ;
+				  sh:order 7 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:architecture ;
+				  sh:name "architecture" ;
+				  sh:order 8 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:copyrightOwnedBy ;
+				  sh:name "copyright owned by" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:nodeKind sh:IRI ] ;
+	sh:property [ sh:path gax-resource:license ;
+				  sh:name "license" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:name ;
+				  sh:name "name" ;
+				  sh:order 1 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path dct:description ;
+				  sh:name "description" ;
+				  sh:order 2 ;
+				  sh:minCount 0 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:aggregationOf ;
+				  sh:name "aggregation of" ;
+				  sh:order 3 ;
+				  sh:minCount 0 ;
+				  sh:nodeKind sh:IRI ] ;
+.
+
+gax-validation:MeasureShape
+	a sh:NodeShape ;
+	sh:targetClass gax-core:Measure ;
+	sh:property [ sh:path gax-core:Value ;
+				  sh:name " value" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:float ] ;
+	sh:property [ sh:path gax-core:Unit ;
+				  sh:name " unit" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+.
+
+gax-validation:NodeShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:Node ;
+	sh:property [ sh:path gax-resource:CPU ;
+				  sh:name " c p u" ;
+				  sh:order 1 ;
+				  sh:node gax-validation:CPUShape ] ;
+	sh:property [ sh:path gax-resource:GPU ;
+				  sh:name " g p u" ;
+				  sh:order 2 ;
+				  sh:node gax-validation:GPUShape ] ;
+	sh:property [ sh:path gax-resource:ramsize ;
+				  sh:name "ramsize" ;
+				  sh:order 3 ;
+				  sh:node gax-validation:MeasureShape ] ;
+	sh:property [ sh:path gax-resource:disk ;
+				  sh:name "disk" ;
+				  sh:order 4 ;
+				  sh:node gax-validation:DiskShape ] ;
+	sh:property [ sh:path gax-resource:NIC ;
+				  sh:name " n i c" ;
+				  sh:order 5 ;
+				  sh:node gax-validation:MeasureShape ] ;
+.
+
+gax-validation:MeasureShape
+	a sh:NodeShape ;
+	sh:targetClass gax-core:Measure ;
+	sh:property [ sh:path gax-core:Value ;
+				  sh:name " value" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:float ] ;
+	sh:property [ sh:path gax-core:Unit ;
+				  sh:name " unit" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+.
+
+gax-validation:CPUShape
+	a sh:NodeShape ;
+	sh:targetClass gax-core:CPU ;
+	sh:property [ sh:path gax-core:numberOfCores ;
+				  sh:name "number of cores" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:integer ] ;
+	sh:property [ sh:path gax-core:numberOfThreads ;
+				  sh:name "number of threads" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:integer ] ;
+	sh:property [ sh:path gax-core:frequency ;
+				  sh:name "frequency" ;
+				  sh:order 3 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:node gax-validation:MeasureShape ] ;
+	sh:property [ sh:path gax-core:boostFrequency ;
+				  sh:name "boost frequency" ;
+				  sh:order 4 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:node gax-validation:MeasureShape ] ;
+	sh:property [ sh:path gax-core:cacheSize ;
+				  sh:name "cache size" ;
+				  sh:order 5 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:node gax-validation:MeasureShape ] ;
+	sh:property [ sh:path gax-core:allowedSocket ;
+				  sh:name "allowed socket" ;
+				  sh:order 6 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:productID ;
+				  sh:name "product i d" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:name ;
+				  sh:name "name" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:manufacturer ;
+				  sh:name "manufacturer" ;
+				  sh:order 3 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+.
+
+gax-validation:GPUShape
+	a sh:NodeShape ;
+	sh:targetClass gax-core:GPU ;
+	sh:property [ sh:path gax-core:memorySize ;
+				  sh:name "memory size" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:node gax-validation:MeasureShape ] ;
+	sh:property [ sh:path gax-core:memoryType ;
+				  sh:name "memory type" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-resource:connection ;
+				  sh:name "connection" ;
+				  sh:order 3 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:productID ;
+				  sh:name "product i d" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:name ;
+				  sh:name "name" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:manufacturer ;
+				  sh:name "manufacturer" ;
+				  sh:order 3 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+.
+
+gax-validation:DiskShape
+	a sh:NodeShape ;
+	sh:targetClass gax-core:Disk ;
+	sh:property [ sh:path gax-core:size ;
+				  sh:name "size" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:node gax-validation:MeasureShape ] ;
+	sh:property [ sh:path gax-core:type ;
+				  sh:name "type" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:productID ;
+				  sh:name "product i d" ;
+				  sh:order 1 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:name ;
+				  sh:name "name" ;
+				  sh:order 2 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+	sh:property [ sh:path gax-core:manufacturer ;
+				  sh:name "manufacturer" ;
+				  sh:order 3 ;
+				  sh:minCount 1 ;
+				  sh:maxCount 1 ;
+				  sh:datatype xsd:string ] ;
+.
+
+
+gax-validation:VirtualNodeShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:VirtualNode ;
+	sh:property [ sh:path gax-resource:type ;
+				  sh:name "type" ;
+				  sh:order 1 ;
+				  sh:datatype xsd:string ] ;
+.
+
+gax-validation:PhysicalNodeShape
+	a sh:NodeShape ;
+	sh:targetClass gax-resource:PhysicalNode ;
+	sh:property [ sh:path gax-resource:type ;
+				  sh:name "type" ;
+				  sh:order 1 ;
+				  sh:datatype xsd:string ] ;
+.
+

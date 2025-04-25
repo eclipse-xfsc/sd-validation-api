@@ -1,0 +1,167 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "@nest"
+    ],
+    "@id": "https://delta-dao.com/.well-known/participantAmazon.json",
+    "@type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantAmazon.json",
+      "gx-participant:name": {
+        "@value": "Amazon Web Services",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "Amazon Web Services EMEA SARL",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "LURCSL.B186284",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "LU",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "38, avenue John F. Kennedy",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "1855",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Luxembourg",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "LU",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "38, avenue John F. Kennedy",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "1855",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "Luxembourg",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:parentOrganisation": [
+        {
+          "@type": "gx-participant:LegalPerson",
+          "gx-participant:legalName": {
+            "@type": "xsd:string",
+            "@value": "Amazon Web Services, Inc."
+          },
+          "gx-participant:registrationNumber": {
+            "@value": "0000174230",
+            "@type": "xsd:string"
+          },
+          "gx-participant:legalAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+              "@value": "US",
+              "@type": "xsd:string"
+            },
+            "gx-participant:street-address": {
+              "@value": "410 Terry Avenue North",
+              "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+              "@value": "WA 98109-5210",
+              "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+              "@value": "Seattle",
+              "@type": "xsd:string"
+            },
+            "gx-participant:state": {
+              "@value": "WA",
+              "@type": "xsd:string"
+            }
+          },
+          "gx-participant:headquarterAddress": {
+            "@type": "gx-participant:Address",
+            "gx-participant:country": {
+              "@type": "xsd:string",
+              "@value": "US"
+            },
+            "gx-participant:street-address": {
+              "@value": "410 Terry Avenue North",
+              "@type": "xsd:string"
+            },
+            "gx-participant:postal-code": {
+              "@value": "WA 98109-5210",
+              "@type": "xsd:string"
+            },
+            "gx-participant:locality": {
+              "@value": "Seattle",
+              "@type": "xsd:string"
+            },
+            "gx-participant:state": {
+              "@value": "WA",
+              "@type": "xsd:string"
+            }
+          }
+        }
+      ],
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T07:02:24.232Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HO4ub4WPz_sO8gfc46E1WFl7LCG710vORWROgigxwgySADDIKuhAEiU0zry6LkfWI01on7mZwfRYTUJTsXsNPgTb2grkdl-4AhhcCjXBwpNkrYglZhFjSI_e2G4OXo4KOR1k0JTHKtFmQnPKXI4jQen-iEJQEPHpXiv3GEwbxBpH1AGPZ3Q7fOoreHnhfujZbAxKWfw6DYXTM0y-vdK2KsRDUVfUwHhnNthFfW7_1srRvhzhBk77q3_Jbyjo33qAE-H4y-M8G0-AudVFGEWczlMwfXMl80o4jgIYWDHzg_lrsEPpG_UCsfdH3RXE_a8lZPZkuA9C_79uStfh6PvyKA"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655622146213",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-19T07:02:26.213Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantAmazon.json",
+      "hash": "57ed4db939a59efb50c9cd36f89687af6da5a96341d05bea0841404487f5f803"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T07:02:26.213Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..F_GFT0MCiwqTQtxthWPr5YgMgL6QqWwvoxJkTMUs-EgRWI6ZflmDcJC7lgRTMVi-UZKtsE2jeim7I01LPnAGEteuCAJvRv_CvcI9IDXe9yfuPcKykTUUTZXAMEYHAw7v4iruGQkAiitErBlTr16GGKziehlpe_xTLoNT4Ldn68cMs0pjXL3GaXAwcRoKN1DmH7HjhrfNIKrDNW7uyZwaZGb5NjJLu3fE3-VXcR0MFZQSNRAZ_lw5F8LKxn8Lzt75dOav4fQwkuOdqbJcz8zI3t2Nf4O1VHVqz6hfBNWi-wJtrusU5A7vu1HNhiuT7mrqdWekgm7HDScPa-Sm8cboPQ",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

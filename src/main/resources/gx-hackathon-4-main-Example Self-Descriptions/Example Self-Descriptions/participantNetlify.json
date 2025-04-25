@@ -1,0 +1,116 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/participant#",
+      "@nest"
+    ],
+    "@id": "https://delta-dao.com/.well-known/participantNetlify.json",
+    "@type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantNetlify.json",
+      "gx-participant:name": {
+        "@value": "Netlify",
+        "@type": "xsd:string"
+      },
+      "gx-participant:legalName": {
+        "@value": "Netlify Incorporated",
+        "@type": "xsd:string"
+      },
+      "gx-participant:registrationNumber": {
+        "@value": "C3644845",
+        "@type": "xsd:string"
+      },
+      "gx-participant:headquarterAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "US",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "2325 3RD STREET, SUITE 215",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "CA 94107",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "SAN FRANCISCO",
+          "@type": "xsd:string"
+        },
+        "gx-participant:state": {
+          "@value": "CA",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-participant:legalAddress": {
+        "@type": "gx-participant:Address",
+        "gx-participant:country": {
+          "@value": "US",
+          "@type": "xsd:string"
+        },
+        "gx-participant:street-address": {
+          "@value": "2325 3RD STREET, SUITE 215",
+          "@type": "xsd:string"
+        },
+        "gx-participant:postal-code": {
+          "@value": "CA 94107",
+          "@type": "xsd:string"
+        },
+        "gx-participant:locality": {
+          "@value": "SAN FRANCISCO",
+          "@type": "xsd:string"
+        },
+        "gx-participant:state": {
+          "@value": "CA",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "gx-service-offering:TermsAndConditions": {
+      "gx-service-offering:url": {
+        "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+        "@type": "xsd:string"
+      },
+      "gx-service-offering:hash": {
+        "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+        "@type": "xsd:string"
+      }
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T07:03:22.852Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..r0UBhNVnJedsm6W6UXGSs7D4rZGAq70iEF0O_Y-78Q8J02tjrpmKz4wbrLsvSNQaRHmAq0QzBta285OYTNeuyievoEDWFcBdueQPkLJ784yimxwFFTIuBEYO3g8q43mw5lYNUNGPC7vRRwGYk7KsecR0Y8wxcRMdMNWKV45gEirWSlSSZWeGn7rHgWmwbgrJFlxksReusHgcR6isoijJml2aubAm3a6HWWPVCFnuVpg74kywxq4bxZYT3YJP8MfETz1M_HGu8Q95p7wJY98x-8sAHKE93uMijbyge8UXnHzKG54-EpmzC8pwxyc0mR_OETPIvpHx2IystffgprEjyA"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655622204717",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-19T07:03:24.717Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/participantNetlify.json",
+      "hash": "11d0bd1745b230fff8fd2140d10a6af17e2bca7e0131377723b4433a5686add1"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T07:03:24.717Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Y7ZNAQ-SB2zX00sDi_cUsXQkBMb0eU8cWk0AI2WNOuufMYtAxMoxu2vcTj5K54XSXqE7dCrQDMElbvpVeN0fEjkNrS7ujoXrPBhlKvaPhVXFk9vE9lKorTsMPq3ama04uKQ_JZLBTDyFCrBUKo_YwLE1UfY3OBZedKsLCN4QZLR9iGL1x1PRSVf_WEmnqbuSBqche90e5TfldDTAXnyE3PND62GVfC9gOIAkD6itPcXtgDXhmCBSi4hjX7hisKQ6JmPLmdLSWhK_wfWtSqUeWuEGDwuO0lwJp3Cd8CkHc9rfMZLvXAJrSQTvSeS6pDZgRSX2AQ35sR2XVKj7aWCoxg",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

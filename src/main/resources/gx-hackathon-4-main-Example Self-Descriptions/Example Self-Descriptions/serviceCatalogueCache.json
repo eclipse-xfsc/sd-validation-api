@@ -1,0 +1,95 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "http://www.w3.org/ns/shacl#",
+      "http://www.w3.org/2001/XMLSchema#",
+      "http://w3id.org/gaia-x/resource#",
+      "http://w3id.org/gaia-x/participant#",
+      "http://w3id.org/gaia-x/service-offering#"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingExperimental"
+    ],
+    "@id": "https://delta-dao.com/.well-known/catalogueCache.json",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/catalogueCache.json",
+      "gx-service-offering:providedBy": {
+        "@type": "xsd:string",
+        "@value": "https://delta-dao.com/.well-known/participant.json"
+      },
+      "gx-service-offering:name": {
+        "@type": "xsd:string",
+        "@value": "Service Catalogue Cache"
+      },
+      "gx-service-offering:description": {
+        "@type": "xsd:string",
+        "@value": "The Service Catalogue Cache is an off-chain, multi-chain cache for metadata that is published on chain, connected to an Elasticsearch database. It continually monitors the chains for MetadataCreated and MetadataUpdated events, processes these events and adds them to the database. The Catalogue Cache API offers a convenient way to access the medatata without scanning the chain yourself."
+      },
+      "gx-service:webAddress": {
+        "@value": "https://aquarius.delta-dao.com",
+        "@type": "xsd:anyURI"
+      },
+      "gx-service-offering:TermsAndConditions": {
+        "gx-service-offering:url": {
+          "@value": "https://raw.githubusercontent.com/oceanprotocol/provider/main/LICENSE",
+          "@type": "xsd:string"
+        },
+        "gx-service-offering:hash": {
+          "@value": "contentHash",
+          "@type": "xsd:string"
+        }
+      },
+      "gx-service-offering:gdpr": [
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:imprint": "https://www.delta-dao.com/imprint"
+        },
+        {
+          "@type": "xsd:anyURI",
+          "gx-service-offering:privacyPolicy": "https://www.delta-dao.com/privacy"
+        }
+      ],
+      "gx-service-offering:dependsOn": [
+        {
+          "@type": "xsd:anyURI",
+          "@value": "https://delta-dao.com/.well-known/K8sCluster.json"
+        },
+        {
+          "@type": "xsd:anyURI",
+          "@value": "https://delta-dao.com/.well-known/serviceElasticSearch.json"
+        }
+      ]
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T07:28:26.310Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:delta-dao.com",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..sNv6DEaUxLzQr9g6LN5LAATKLwUTY5ah9ldo4Ss_xEkO_47ApyuhA-FFZHMJ-NzsLiLhiwJY1FQD0wOmbtNcKS5taI_vV1vU4YvePRs5N61AFDAsCSg06M5B-vs2gi-4eSYz0FVFSZauucVMh7RA9cdUO_f9FFQ1yLl62CLET9RF_8cbXN-Ug0u5c6jRiswGh2gtI3YdWVEk9GQtIxUNYf6xG-d8fMLVTZK-U3glimqApJOdY0mw4wegyQrt2G_VRltbXj5W_Nyuka8t1ecHqSuaPKNbz4b_DQWu6BwOave0Mq3SO9GshWU-HvJXUxPSJdIyR6KT9AOvCKk5Imcusg"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "@type": [
+      "VerifiableCredential",
+      "ServiceOfferingCredentialExperimental"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ServiceOfferingCredentialExperimental/1655623710091",
+    "issuer": "did:web:compliance.gaia-x.eu",
+    "issuanceDate": "2022-06-19T07:28:30.091Z",
+    "credentialSubject": {
+      "id": "https://delta-dao.com/.well-known/catalogueCache.json",
+      "hash": "e2ec9bad749fdac6d8e9eab21937ac7d35725cd89b603dfe9f5d583c609119bb"
+    },
+    "proof": {
+      "type": "JsonWebKey2020",
+      "created": "2022-06-19T07:28:30.091Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ub8qeP3NnjVZ22Vh84TBJYn9SuVnit01ed68B-j8zAmTpKqMCDStQy8xQ2rH2ggBKs29sfh0uzV4rSl_iFORx1KHKML4r91LKuR_aXF1TsGtr1DfyvWV3jHPuw9jfdNiRx4HnZA0PdA4evnZPSCkQ_onATa-HF7i7kACRFC2TF-GMRI4ihmnhaUC5p2oq6VGRpwSYIfHRiJTNkEP7ibhooOiZNYBUcZQ9ndIGV5Yuw_oSLa5UyucYO2ZdYU-tI_uG9pp-zItyvzaMIkR8MAsCF7VlU--d_EV7KUQUpwZLKzQPzHrWW2AUdvxPYJWvhNnoDN7emKJNcHv3-vV-9-lYQ",
+      "verificationMethod": "did:web:compliance.gaia-x.eu"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+    "selfDescriptionCredential": {
+        "@context": [
+            "http://www.w3.org/ns/shacl#",
+            "http://www.w3.org/2001/XMLSchema#",
+            "http://w3id.org/gaia-x/participant#",
+            "@nest"
+        ],
+        "@id": "https://peaq.network/.well-known/participant.json",
+        "@type": [
+            "VerifiableCredential",
+            "LegalPerson"
+        ],
+        "credentialSubject": {
+            "id": "did:web:peaq.network",
+            "gx-participant:name": {
+                "@value": "Peaq Technology GmbH",
+                "@type": "xsd:string"
+            },
+            "gx-participant:legalName": {
+                "@value": "Peaq Technology GmbH",
+                "@type": "xsd:string"
+            },
+            "gx-participant:registrationNumber": {
+                "@value": "DE330054824.HRB190416",
+                "@type": "xsd:string"
+            },
+            "gx-participant:headquarterAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "DE",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Chausseestraße 86",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "10115",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Berlin",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-participant:legalAddress": {
+                "@type": "gx-participant:Address",
+                "gx-participant:country": {
+                    "@value": "DE",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:street-address": {
+                    "@value": "Chausseestraße 86",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:postal-code": {
+                    "@value": "10115",
+                    "@type": "xsd:string"
+                },
+                "gx-participant:locality": {
+                    "@value": "Berlin",
+                    "@type": "xsd:string"
+                }
+            },
+            "gx-service-offering:TermsAndConditions": {
+                "gx-service-offering:url": {
+                    "@value": "https://gaia-x.gitlab.io/policy-rules-committee/trust-framework/participant/#legal-person",
+                    "@type": "xsd:string"
+                },
+                "gx-service-offering:hash": {
+                    "@value": "36ba819f30a3c4d4a7f16ee0a77259fc92f2e1ebf739713609f1c11eb41499e7aa2cd3a5d2011e073f9ba9c107493e3e8629cc15cd4fc07f67281d7ea9023db0",
+                    "@type": "xsd:string"
+                }
+            }
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-21T09:13:57.571Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:delta-dao.com",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..g5vdCeTQ_6sK6rhMJ-RAPzY586MfHbANBR-VCOp3rCJgwPBRZFpM-9y5f473xeZgIsXK9x1-DuinUAV3gfqpzP-onNhd313ZbXRjNTHtd9MmcLLxtGuHpxdiH3oO-HUioZTPnqU1sFBov56SG96p9XbvJwyWew9hVRe7KI8TeYl4IZqwOfR4gq8cc1hrt82xOjPbMQkk5mMAtozhx6NelAcL65uLD3Xyi4SgCw-JGg1GFrKNVtvWf4NaQHNLYy1SefG24662RgDAdcnlYIlLEJbKrWsLgm7J01y1-bmTNMyuFVwBt7FleMeuBKBAoFVanP3lLTmIlzGDLJxWLbVktA"
+        }
+    },
+    "complianceCredential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "@type": [
+            "VerifiableCredential",
+            "ParticipantCredential"
+        ],
+        "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1655802841042",
+        "issuer": "did:web:compliance.gaia-x.eu",
+        "issuanceDate": "2022-06-21T09:14:01.042Z",
+        "credentialSubject": {
+            "id": "did:web:peaq.network",
+            "hash": "d23ad4da709498531bac0bc006c65968c8d848630b2ebfc69d32483f8d55b768"
+        },
+        "proof": {
+            "type": "JsonWebKey2020",
+            "created": "2022-06-21T09:14:01.042Z",
+            "proofPurpose": "assertionMethod",
+            "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ljHyJHHN9BF1Sc00N0_CPiHPWo_tPLC2JxW1tatnaxmpeN6Td4RepMdZZavP89sYbfA98zv6_G0EBb5lDe_hxb6ShY8hmoBeQSYI2zYrggAWEsSsu9Odcf3qL1XSIGQ0W37GgHYM11kkPU1K0jFT4AhJJb0KMuWAVDN9xBr2gWy-23bBtyVpuA4MLNaobPMbGpUcMJy-3qgi39ChOvSN8QHt6WziQ2ANFRcER2amQ0JC5RYijPedDkp0YaIWTj3zfQq65XwRPtLQS9GGFZg-TSQxUVQFbOGok9_klJKcpwUFloI70U-ZwJ2VLDBJVzQzL0PliyY-l56-5qf0W7013A",
+            "verificationMethod": "did:web:compliance.gaia-x.eu"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gax-node": "http://w3id.org/gaia-x/node#",
+    "gax-service": "http://w3id.org/gaia-x/service#",
+    "gax-resource": "http://w3id.org/gaia-x/resource#",
+    "ex": "http://example.org/"
+  },
+  "@id": "ex:InfrastructureServiceOffering",
+  "@type": "gax-service:ServiceOffering",
+  "gax-service:providedBy": {
+    "@id": "ex:ACMEProvider",
+    "@type": "gax-participant:Participant"
+  },
+  "gax-service:termsAndConditions": {
+    "@value": ["https://www.acme.com/IaaS/tac.pdf"],
+    "@type": "xsd:anyURI"
+  },
+  "gax-service:dependsOn": [
+    {"@id": "ex:Compute", "@type":"gax-service:ServiceOffering"}, {"@id": "ex:Storage", "@type":"gax-service:ServiceOffering"}, {"@id": "ex:Networking", "@type":"gax-service:ServiceOffering"}
+  ],
+  "gax-resource:aggregationOf": [{"@id": "ex:DataCenter", "@type":"gax-resource:PhysicalResource"}]
+}
