@@ -8,5 +8,9 @@ on:
 jobs:
   dockerbuild:
     uses: eclipse-xfsc/dev-ops/.github/workflows/dockerbuild.yml@main
-  helm:
-    uses: eclipse-xfsc/dev-ops/.github/workflows/helm.yml@main
+    secrets: inherit
+  # helm:
+  #   uses: eclipse-xfsc/dev-ops/.github/workflows/helm.yml@main
+  #   with: 
+  #     buildContext:  "deployment/helm"
+  #     harbor_config: "deployment/harbor.config"
