@@ -22,7 +22,7 @@
         <jena.version>4.3.1</jena.version>
         <shacl.version>1.4.1</shacl.version>
         <junit.version>4.13.2</junit.version>
-        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
         <logback.version>1.2.9</logback.version>
         <log4j2.version>2.17.0</log4j2.version>
     </properties>
